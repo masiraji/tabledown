@@ -1,14 +1,12 @@
----
-title: baap
-output: html_document
----
+# baap
+
+
+
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/baap)](https://CRAN.R-project.org/package=baap)
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/masiraji/baap/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/baap/actions)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
-
-
 
 This is a companion r package for the Book " Basic and Advanced Psychometrics in R" [work in Progress]
 
@@ -16,11 +14,18 @@ This package includes data-frames and some interesting commands. Over the years 
 
 ## Installation
 
-You can install the development version of baap from [GitHub](https://github.com) with:
+You can install the development version of baap from [GitHub](https://github.com/) with:
 
-```{r, eval=F, echo=T}
+``` r
 # install.packages("devtools")
-
 devtools::install_github("masiraji/baap")
+```
 
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(baap)
+## basic example code
 ```
