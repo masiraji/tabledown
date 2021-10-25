@@ -24,7 +24,6 @@
 #'@importFrom tidyselect vars_select_helpers
 #' @export
 fac.tab <- function(x, cut,complexity =T ) {
-  use.arg3 <- FALSE   # This will decide if `x3` is used or not.
 
   V1 <- V2 <- V3 <-NULL
   ifelse(complexity==T,{
