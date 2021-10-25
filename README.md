@@ -7,3 +7,5 @@ This package includes data-frames and some interesting commands. Over the years 
 You can install the package
 
     devtools::install_github("masiraji/baap")
+
+Tests
