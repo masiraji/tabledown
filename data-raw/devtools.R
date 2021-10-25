@@ -10,7 +10,7 @@ pkgdown::build_site()
 usethis::browse_github()
 
 
-usethis::use_lifecycle_badge("experimental")
+usethis::use_lifecycle_badge("stable")
 
 
 usethis::use_github_action_check_standard()
