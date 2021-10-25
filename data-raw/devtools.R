@@ -13,5 +13,5 @@ usethis::browse_github()
 usethis::use_lifecycle_badge("stable")
 
 
-
+usethis::use_github_actions_badge(name = "R-CMD-check", repo_spec = NULL)
 
