@@ -15,3 +15,5 @@ usethis::use_lifecycle_badge("experimental")
 
 usethis::use_github_action_check_standard()
 usethis::use_cran_badge()
+usethis::use_github_links()
+

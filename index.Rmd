@@ -3,9 +3,9 @@ title: baap
 output: html_document
 ---
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/baap)](https://CRAN.R-project.org/package=baap)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/masiraji/baap/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/baap/actions)
+[![CRAN status](https://www.r-pkg.org/badges/version/baap)](https://CRAN.R-project.org/package=baap)
 <!-- badges: end -->
 
 

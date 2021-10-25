@@ -1,12 +1,12 @@
 # baap
 
-
-
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/baap)](https://CRAN.R-project.org/package=baap)
-[![R-CMD-check](https://github.com/masiraji/baap/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/baap/actions)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/masiraji/baap/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/baap/actions)
+[![CRAN status](https://www.r-pkg.org/badges/version/baap)](https://CRAN.R-project.org/package=baap)
 <!-- badges: end -->
+
+
 
 This is a companion r package for the Book " Basic and Advanced Psychometrics in R" [work in Progress]
 
