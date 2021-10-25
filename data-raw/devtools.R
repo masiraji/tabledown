@@ -10,8 +10,8 @@ pkgdown::build_site()
 usethis::browse_github()
 
 
-usethis::use_lifecycle_badge("stable")
+usethis::use_lifecycle_badge("experimental")
 
 
-usethis::use_github_actions_badge(name = "R-CMD-check", repo_spec = NULL)
-
+usethis::use_github_action_check_standard()
+usethis::use_cran_badge()

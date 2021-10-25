@@ -1,5 +1,0 @@
-url: ~
-development:
-  destination: dev
-  version_label: stable
-  version_tooltip: "Custom message here"
