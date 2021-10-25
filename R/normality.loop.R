@@ -9,7 +9,7 @@
 #' @param alpha Desired alpha
 #'
 #'@examples
-#'data <- BAAP::Rotter[, 11:31]
+#'data <- baap::Rotter[, 11:31]
 #'normality.loop(data)
 #'
 #'

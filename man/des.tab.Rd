@@ -14,5 +14,5 @@ table <- des.tab(data)}
 This function will create a publication ready essential descriptive table for item analysis
 }
 \examples{
-data <- BAAP::Rotter[, 11:31]
+data <- baap::Rotter[, 11:31]
 }

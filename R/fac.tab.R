@@ -7,38 +7,61 @@
 #'
 #' @param  x A psych package object
 #' @param  cut The value under which all factor loading will be suppressed
-#'
+#' @param complexity To add complexity parameters
 #'@examples
-#'data <- BAAP::Rotter[, 11:31]
+#'data <- baap::Rotter[, 11:31]
 #'correlations <- psych::polychoric(data, correct = 0)
 #'fa.5F.1 <- psych::fa(r=correlations$rho, nfactors = 5, fm= "pa",rotate ="varimax",
 #'residuals = TRUE, SMC = TRUE, n.obs =428)
 #'table <- fac.tab(fa.5F.1, .3)
 #'#always save the output into an object
+#'@return
+#'A publication ready summary table for the Factor analysis conducted by psych Package
 
 
 #' @importFrom magrittr  %>%
 #'@importFrom dplyr across mutate
 #'@importFrom tidyselect vars_select_helpers
 #' @export
-fac.tab <- function(x, cut) {
+fac.tab <- function(x, cut,complexity =T ) {
+  use.arg3 <- FALSE   # This will decide if `x3` is used or not.
+
   V1 <- V2 <- V3 <-NULL
-  #get sorted loadings
-  loadings <- psych::fa.sort(x)$loadings %>% round(2)
-  #supress loadings
+  ifelse(complexity==T,{
+
+    loadings <- psych::fa.sort(x)$loadings %>% round(2)
+
+    loadings[abs(loadings) < abs(cut)] <- ""
+    #get additional info
+    add_info <- (cbind(x$communality,
+                       x$uniquenesses,
+                       x$complexity)) %>%
+      # make it a data frame
+      as.data.frame() %>%
+      # column names
+      dplyr::rename("Communality" = V1,
+                    "Uniqueness" = V2,
+                    "Complexity" = V3) %>%
+      #get the item names from the vector
+      tibble::rownames_to_column("item")
+  },
+
+  {loadings <- psych::fa.sort(x)$loadings %>% round(2)
+
   loadings[abs(loadings) < abs(cut)] <- ""
   #get additional info
-  add_info <- cbind(x$communality,
-                    x$uniquenesses,
-                    x$complexity) %>%
+  add_info <- (cbind(x$communality,
+                     x$uniquenesses
+  )) %>%
     # make it a data frame
     as.data.frame() %>%
     # column names
     dplyr::rename("Communality" = V1,
-           "Uniqueness" = V2,
-           "Complexity" = V3) %>%
+                  "Uniqueness" = V2
+    ) %>%
     #get the item names from the vector
     tibble::rownames_to_column("item")
+  })
   #build table
   loadings <- loadings %>%
     unclass() %>%
@@ -51,7 +74,10 @@ fac.tab <- function(x, cut) {
     as.data.frame()%>%
     round(2)
   loadings <- rbind(data.table::setDT(loadings), data.table::setDT(variance[2,]), fill=TRUE)
-
+  nr <- nrow(loadings)
+  loadings[nr, 1] <- "% of Variance"
+  loadings[is.na(loadings)] <- ""
+  loadings
 }
 
 

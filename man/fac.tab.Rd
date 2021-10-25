@@ -4,12 +4,17 @@
 \alias{fac.tab}
 \title{A Function for Creating  Publication Quality Factor Tables}
 \usage{
-fac.tab(x, cut)
+fac.tab(x, cut, complexity = T)
 }
 \arguments{
 \item{x}{A psych package object}
 
 \item{cut}{The value under which all factor loading will be suppressed}
+
+\item{complexity}{To add complexity parameters}
+}
+\value{
+A publication ready summary table for the Factor analysis conducted by psych Package
 }
 \description{
 This function will create publication worthy factor tables from objects created from
@@ -18,7 +23,7 @@ I have came across this beautiful piece of codes
 at https://www.anthonyschmidt.co/post/2020-09-27-efa-tables-in-r/ and modified it a bit.
 }
 \examples{
-data <- BAAP::Rotter[, 11:31]
+data <- baap::Rotter[, 11:31]
 correlations <- psych::polychoric(data, correct = 0)
 fa.5F.1 <- psych::fa(r=correlations$rho, nfactors = 5, fm= "pa",rotate ="varimax",
 residuals = TRUE, SMC = TRUE, n.obs =428)

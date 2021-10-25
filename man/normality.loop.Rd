@@ -19,7 +19,7 @@ values turns out to be null thus failing to test normality of the data set. T
 his is a good alternative of dlookr function
 }
 \examples{
-data <- BAAP::Rotter[, 11:31]
+data <- baap::Rotter[, 11:31]
 normality.loop(data)
 
 
