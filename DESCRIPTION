@@ -17,6 +17,7 @@ Imports:
 Suggests: 
     rmarkdown,
     knitr
+    markdown
 VignetteBuilder: knitr
 URL: https://github.com/masiraji/baap
 BugReports: https://github.com/masiraji/baap/issues
