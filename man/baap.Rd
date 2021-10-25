@@ -12,7 +12,7 @@ The baap package provides necessary data frames used through out the book and so
 \enumerate{
 \item Rotter: Psychometric validation data of Bangla Rotter's Internal- External Data
 \item Gantt and Spot: Two sample data-frames for creating project management Gantt chart
-\item FFMQ.CFA: Structural Validitation data of Bangla Five Factor Mindfulness Questionnaire.
+\item FFMQ.CFA: Structural Validation data of Bangla Five Factor Mindfulness Questionnaire.
 \item FFMQ.Val:Correlational Validity evidences of Bangla Five Factor Mindfulness Questionnaire.
 }
 }
@@ -27,6 +27,8 @@ in a publication ready state.
 \item des.table(): Creates a publication ready descriptive table of Item analysis with the reporting of normality assumptions.
 \item normality.loop(): Compute normality test on the whole data frame. No grouping required.
 \item bedTime(): Calculate total time spent in bed from the sleep log entry.
+\item cfa.tab():Creates a table with necessary fit indices from a lavaan class objects
+\item cfa.tab/multi():creates a table with necessary fit indices from several lavaan class objects
 }
 
 It is advisable that you load \strong{tidyverse} along with \strong{baap}

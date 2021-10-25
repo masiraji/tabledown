@@ -1,6 +1,6 @@
 Package: baap
 Title: A Companion Pack for the Book "Basic & Advanced Psychometrics in R"
-Version: 0.0.0.91
+Version: 0.0.0.92
 Authors@R: 
     person("Mushfiqul", "Anwar Siraji", , "siraji1993@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0003-0127-9982"))
