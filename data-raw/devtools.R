@@ -8,7 +8,7 @@ usethis::browse_github()
 rm(list = c("ac.tab"))
 
 #packgedown
-pkgdown::build_site(examples = TRUE)
+pkgdown::build_site()
 pkgdown::build_home(pkg = ".", override = list(), preview = NA, quiet = TRUE)
 
 
