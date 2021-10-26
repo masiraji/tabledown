@@ -13,11 +13,22 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Imports:
-        psych, MOTE,stats, dplyr, tibble, magrittr, data.table, tidyselect, lavaan
+    psych,
+    MOTE,
+    stats,
+    dplyr,
+    tibble,
+    magrittr,
+    data.table,
+    tidyselect,
+    lavaan,
+    lifecycle
 Suggests: 
     rmarkdown,
     knitr,
-    markdown
+    markdown,
+    spelling
 VignetteBuilder: knitr
 URL: https://github.com/masiraji/baap
 BugReports: https://github.com/masiraji/baap/issues
+Language: en-US

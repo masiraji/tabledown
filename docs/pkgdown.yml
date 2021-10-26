@@ -2,6 +2,6 @@ pandoc: 2.11.4
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
-  Package Functions: Package Functions.html
-last_built: 2021-10-25T21:44Z
+  Functions: Functions.html
+last_built: 2021-10-26T06:21Z
 
