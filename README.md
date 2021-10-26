@@ -21,7 +21,7 @@ devtools::install_github("masiraji/baap")
 
 ## Example
 
-### Creating A Summary Table of Factor Analysis
+### Creating A Summary Table for Factor Analysis
 
 Commonly it is very difficult to create a publication friendly table that summaries all necessary information of a factor analysis. This example will help you in that pursuit with the help of **fac.tab()** function
 
