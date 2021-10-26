@@ -16,9 +16,11 @@ pkgdown::build_home(pkg = ".", override = list(), preview = NA, quiet = TRUE)
 usethis::use_cran_badge()
 usethis::use_github_links()
 badgecreatr::badge_cran_downloads("baap", period = NULL)
+badgecreatr::badge_thanks_md()
+badgecreatr::badge_license()
 usethis::use_lifecycle_badge("stable")
 usethis::use_lifecycle()
-
+badgecreatr::
 #Usethis
 #Add file to project ignore
 usethis::use_build_ignore(c("data-raw", "docs", "index.Rmd, packages.bib","package.fig"))

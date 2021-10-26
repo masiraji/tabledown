@@ -3,6 +3,8 @@
 <!-- badges: start -->
 
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) [![R-CMD-check](https://github.com/masiraji/baap/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/baap/actions) [![CRAN status](https://www.r-pkg.org/badges/version/baap)](https://CRAN.R-project.org/package=baap) [![metacran downloads](https://cranlogs.r-pkg.org/badges/baap)](https://cran.r-project.org/package=baap)
+[![thanks-md](https://img.shields.io/badge/THANKS-md-ff69b4.svg)](THANKS.md)
+[![license](https://img.shields.io/badge/license-GPL (>=3)-lightgrey.svg)](https://choosealicense.com/)
 
 <!-- badges: end -->
 
