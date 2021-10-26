@@ -8,7 +8,7 @@ devtools::load_all()
 devtools::check()
 rm(list = c("ac.tab"))
 
-pkgdown::build_site()
+pkgdown::build_site(examples = TRUE)
 usethis::browse_github()
 
 
@@ -21,7 +21,7 @@ usethis::use_github_links()
 usethis::use_github_action_check_standard()
 
 #Add file to project ignore
-usethis::use_build_ignore(c("index.Rmd", "book.bib", "packages.bib", "index.html"))
+usethis::use_build_ignore("data-raw")
 
 #Get vaccinated
 usethis::git_vaccinate()
@@ -50,4 +50,5 @@ fledge::bump_version()
 #testing the pack
 usethis::use_testthat()
 
+pkgdown::build_home(pkg = ".", override = list(), preview = NA, quiet = TRUE)
 

@@ -1,11 +1,3 @@
+^data-raw$
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^data-raw$
-^_pkgdown\.yml$
-^docs$
-^pkgdown$
-^\.github$
-^index\.Rmd$
-^book\.bib$
-^packages\.bib$
-^index\.html$

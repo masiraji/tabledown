@@ -7,12 +7,12 @@
 des.tab(df)
 }
 \arguments{
-\item{df}{A data frame
-table <- des.tab(data)}
+\item{df}{A data frame}
 }
 \description{
 This function will create a publication ready essential descriptive table for item analysis
 }
 \examples{
 data <- baap::Rotter[, 11:31]
+table <- des.tab(data)
 }

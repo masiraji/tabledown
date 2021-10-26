@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>baap: A Companion of the book "Basic and Advanced Psychometrics in R" — baap • baap</title>
+<title>Pipe operator — %&gt;% • baap</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="baap: A Companion of the book "Basic and Advanced Psychometrics in R" — baap" />
-<meta property="og:description" content="The baap package provides necessary data frames used through out the book and some neat functions" />
+<meta property="og:title" content="Pipe operator — %&gt;%" />
+<meta property="og:description" content="See magrittr::%&amp;gt;% for details." />
 
 
 
@@ -123,44 +123,33 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>baap: A Companion of the book "Basic and Advanced Psychometrics in R"</h1>
-    <small class="dont-index">Source: <a href='https://github.com/masiraji/baap/blob/master/R/baap.R'><code>R/baap.R</code></a></small>
-    <div class="hidden name"><code>baap.Rd</code></div>
+    <h1>Pipe operator</h1>
+    <small class="dont-index">Source: <a href='https://github.com/masiraji/baap/blob/master/R/utils-pipe.R'><code>R/utils-pipe.R</code></a></small>
+    <div class="hidden name"><code>pipe.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>The baap package provides necessary data frames used through out the book and some neat functions</p>
+    <p>See <code>magrittr::%&gt;%</code> for details.</p>
     </div>
 
+    <pre class="usage"><span class='va'>lhs</span> <span class='op'>%&gt;%</span> <span class='va'>rhs</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>lhs</th>
+      <td><p>A value or the magrittr placeholder.</p></td>
+    </tr>
+    <tr>
+      <th>rhs</th>
+      <td><p>A function call using the magrittr semantics.</p></td>
+    </tr>
+    </table>
 
-    <h2 class="hasAnchor" id="baap-data-frames"><a class="anchor" href="#baap-data-frames"></a>baap Data-frames</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    
-
-<ol>
-<li><p>Rotter: Psychometric validation data of Bangla Rotter's Internal- External Data</p></li>
-<li><p>Gantt and Spot: Two sample data-frames for creating project management Gantt chart</p></li>
-<li><p>FFMQ.CFA: Structural Validation data of Bangla Five Factor Mindfulness Questionnaire.</p></li>
-<li><p>FFMQ.Val:Correlational Validity evidences of Bangla Five Factor Mindfulness Questionnaire.</p></li>
-</ol>
-
-    <h2 class="hasAnchor" id="baap-functions"><a class="anchor" href="#baap-functions"></a>baap functions</h2>
-
-    
-
-<p>This packages includes some neat functions. Some of the functions presented here are from
-stack overflow and other resources that we find very helpful in formatting the outputs
-in a publication ready state.</p><ol>
-<li><p>fac.table(): Creates a publication ready table from the output of psych based factor analysis.</p></li>
-<li><p>des.table(): Creates a publication ready descriptive table of Item analysis with the reporting of normality assumptions.</p></li>
-<li><p>normality.loop(): Compute normality test on the whole data frame. No grouping required.</p></li>
-<li><p>bedTime(): Calculate total time spent in bed from the sleep log entry.</p></li>
-<li><p>cfa.tab():Creates a table with necessary fit indices from a lavaan class objects</p></li>
-<li><p>cfa.tab/multi():creates a table with necessary fit indices from several lavaan class objects</p></li>
-</ol>
-
-<p>It is advisable that you load <strong>tidyverse</strong> along with <strong>baap</strong></p>
+    <p>The result of calling <code>rhs(lhs)</code>.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
