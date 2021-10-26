@@ -6,3 +6,4 @@
 ^index\.Rmd, packages\.bib$
 ^\.github$
 ^package\.fig$
+^THANKS\.md$

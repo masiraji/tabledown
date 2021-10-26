@@ -20,10 +20,10 @@ badgecreatr::badge_thanks_md()
 badgecreatr::badge_license()
 usethis::use_lifecycle_badge("stable")
 usethis::use_lifecycle()
-badgecreatr::
+
 #Usethis
 #Add file to project ignore
-usethis::use_build_ignore(c("data-raw", "docs", "index.Rmd, packages.bib","package.fig"))
+usethis::use_build_ignore(c("data-raw", "docs", "index.Rmd, packages.bib","package.fig","THANKS.md"))
 
 #Get vaccinated
 usethis::git_vaccinate()
