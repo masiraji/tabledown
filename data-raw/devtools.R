@@ -21,7 +21,7 @@ usethis::use_lifecycle()
 
 #Usethis
 #Add file to project ignore
-usethis::use_build_ignore(c("data-raw", "docs", "index.Rmd, packages.bib"))
+usethis::use_build_ignore(c("data-raw", "docs", "index.Rmd, packages.bib","package.fig"))
 
 #Get vaccinated
 usethis::git_vaccinate()

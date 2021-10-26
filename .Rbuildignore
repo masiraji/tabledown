@@ -5,3 +5,4 @@
 ^index\.Rmd$
 ^index\.Rmd, packages\.bib$
 ^\.github$
+^package\.fig$

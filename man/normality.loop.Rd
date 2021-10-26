@@ -16,7 +16,7 @@ normality.loop(df, bonf = TRUE, alpha = 0.05)
 \description{
 This function will compute normality on entire data set. Sometime in dlookr package p
 values turns out to be null thus failing to test normality of the data set. T
-his is a good alternative of dlookr function
+his is a good alternative of dlookr function. Here normality is tested using shapiro.test from base stats
 }
 \examples{
 data <- baap::Rotter[, 11:31]
