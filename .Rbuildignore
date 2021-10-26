@@ -6,3 +6,6 @@
 ^pkgdown$
 ^\.github$
 ^index\.Rmd$
+^book\.bib$
+^packages\.bib$
+^index\.html$

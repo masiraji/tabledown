@@ -3,8 +3,9 @@
 #' This function will create a publication ready essential descriptive table for item analysis
 #'@examples
 #'data <- baap::Rotter[, 11:31]
-#' @param df A data frame
 #'table <- des.tab(data)
+#' @param df A data frame
+
 
 #' @export
 des.tab <- function(df){

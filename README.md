@@ -22,11 +22,5 @@ You can install the development version of baap from [GitHub](https://github.com
 devtools::install_github("masiraji/baap")
 ```
 
-## Example
 
-This is a basic example which shows you how to solve a common problem:
 
-``` r
-library(baap)
-## basic example code
-```

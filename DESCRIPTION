@@ -27,8 +27,10 @@ Suggests:
     rmarkdown,
     knitr,
     markdown,
-    spelling
+    spelling,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
 URL: https://github.com/masiraji/baap
 BugReports: https://github.com/masiraji/baap/issues
 Language: en-US
+Config/testthat/edition: 3
