@@ -16,7 +16,7 @@ Imports:
         psych, MOTE,stats, dplyr, tibble, magrittr, data.table, tidyselect, lavaan
 Suggests: 
     rmarkdown,
-    knitr
+    knitr,
     markdown
 VignetteBuilder: knitr
 URL: https://github.com/masiraji/baap

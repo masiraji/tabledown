@@ -17,3 +17,6 @@ usethis::use_github_action_check_standard()
 usethis::use_cran_badge()
 usethis::use_github_links()
 
+
+
+usethis::use_build_ignore("index.Rmd")
