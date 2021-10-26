@@ -1,3 +1,7 @@
 ^data-raw$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^docs$
+^index\.Rmd$
+^index\.Rmd, packages\.bib$
+^\.github$

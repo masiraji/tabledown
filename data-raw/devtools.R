@@ -21,10 +21,11 @@ usethis::use_github_links()
 usethis::use_github_action_check_standard()
 
 #Add file to project ignore
-usethis::use_build_ignore("data-raw")
+usethis::use_build_ignore(c("data-raw", "docs", "index.Rmd, packages.bib"))
 
 #Get vaccinated
 usethis::git_vaccinate()
+usethis::use_build_ignore(".github")
 
 
 usethis::use_spell_check()

@@ -1,7 +1,9 @@
 ---
-title: baap
+title: "baap"
 output: html_document
+
 ---
+
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/masiraji/baap/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/baap/actions)
@@ -57,7 +59,7 @@ papaja::apa_table(table, caption= "A Beautiful Table describing the Fator analys
 
 ### Creating A Summary Table of Fit indices in Confitmatory Factor Analyis
 
-When reporting the results of confirmatory factor analysis, modern psychometrics suggest to fit several possible structural model of the latent construct and report the fit indices for them. [**lavan**](https://github.com/yrosseel/lavaan) package does fantastic job doing the confirmatory factor analysis. Here we will see how to create publication friendly summary of fit indices from several fitteted model
+When reporting the results of confirmatory factor analysis, modern psychometrics suggest to fit several possible structural model of the latent construct and report the fit indices for them. [**lavan**](https://github.com/yrosseel/lavaan)  package does fantastic job doing the confirmatory factor analysis. Here we will see how to create publication friendly summary of fit indices from several fitteted model
 ```{r CFA, echo =T, warning=F, message=F}
 # Load required packages
 library(baap)
@@ -107,7 +109,7 @@ papaja::apa_table(table, caption= "A Beautiful Table describing the Fit Indices 
 ```
 
 ### Creating Summary Table for Item Analysis
-In psychometrics conducting item analysis is very common. **psych** packages have provided enough tools to smoothly run the item analysis. Here we will create publication friendly summary table of item analysis with all necessary information using function **des.tab()**
+In psychometrics conducting item analysis is very common. [**psych**](https://cran.r-project.org/web/packages/psych/index.html) packages have provided enough tools to smoothly run the item analysis. Here we will create publication friendly summary table of item analysis with all necessary information using function **des.tab()**
 
 ```{r ItemAnalysis,echo =T, warning=F, message=F }
 #Load required packages
