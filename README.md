@@ -44,7 +44,7 @@ Commonly it is very difficult to create a publication friendly table that summar
 
     papaja::apa_table(table, caption= "A Beautiful Table describing the Fator analysis Output ")
 
-![](package.fig/fac.tab.jpg "Table 1: A Beautiful Summary Table of Factor Analysis Output")
+![](man/figures/fac.tab.jpg "Table 1: A Beautiful Summary Table of Factor Analysis Output")
 
 ### Creating A Summary Table of Fit indices in Confitmatory Factor Analyis
 
@@ -96,7 +96,7 @@ When reporting the confirmatory factor analysis results, modern psychometrics su
 
     papaja::apa_table(table, caption= "A Beautiful Table describing the Fit Indices of Three Fitted Model ")
 
-![A Beautiful Summary Table of Fit Indices of Three Fitted CFA Models](package.fig/cfa.tab.jpg)
+![A Beautiful Summary Table of Fit Indices of Three Fitted CFA Models](man/figures/cfa.tab.jpg)
 
 ### Creating Summary Table for Item Analysis
 
@@ -110,4 +110,4 @@ In psychometrics conducting item-analysis is very common. [**psych**](https://c
 
     table <- des.tab(data) papaja::apa_table(table, caption= "A Beautiful Table Summarizing the Output of Item Analysis ")
 
-![A Beautiful Summary Table of Item-Analysis](package.fig/item%20analysis.jpg)
+![A Beautiful Summary Table of Item-Analysis](man/figures/item%20analysis.jpg)
