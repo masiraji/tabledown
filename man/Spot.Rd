@@ -13,7 +13,7 @@ A data frame with 29 rows and 3 variables:
 }
 }
 \source{
-\url{http://somewhere.important.com/}
+\url{https://github.com/masiraji/tabledown/tree/main/data-raw}
 }
 \usage{
 Spot

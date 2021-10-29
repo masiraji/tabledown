@@ -7,7 +7,7 @@
 #'   \item{\code{start_date}}{character Start Date}
 #'   \item{\code{end_date}}{character End Date}
 #'}
-#'@source \url{http://somewhere.important.com/}
+#'@source \url{https://github.com/masiraji/tabledown/tree/main/data-raw}
 "Gantt"
 
 #' @title Spot Data
@@ -18,7 +18,7 @@
 #'   \item{\code{spot_type}}{character Progress Status}
 #'   \item{\code{spot_date}}{character Date of Reporting Progress}
 #'}
-#'@source \url{http://somewhere.important.com/}
+#'@source \url{https://github.com/masiraji/tabledown/tree/main/data-raw}
 "Spot"
 #' @title Validation Data of Bangla Rotter I-E Scale
 #' @description This is the validation data of Bangla Rotter's Internal and External Scale.
@@ -116,7 +116,7 @@
 #'   \item{\code{DI28}}{double COLUMN_DESCRIPTION}
 #'   \item{\code{DI_Total}}{double COLUMN_DESCRIPTION}
 #'}
-#' @source \url{http://somewhere.important.com/}
+#' @source \url{https://github.com/masiraji/tabledown/tree/main/data-raw}
 "Rotter"
 
 #' @title Structural Validity data of FFMQ
@@ -171,7 +171,7 @@
 #'   \item{\code{Ritem38}}{double COLUMN_DESCRIPTION}
 #'   \item{\code{Ritem39}}{double COLUMN_DESCRIPTION}
 #'}
-#' @source \url{http://somewhere.important.com/}
+#' @source \url{https://github.com/masiraji/tabledown/tree/main/data-raw}
 "FFMQ.CFA"
 
 #' @title Correlational based Valididity evidence of FFMQ
@@ -285,6 +285,6 @@
 #'   \item{\code{N7}}{character COLUMN_DESCRIPTION}
 #'   \item{\code{N8}}{character COLUMN_DESCRIPTION}
 #'}
-#' @source \url{http://somewhere.important.com/}
+#' @source \url{https://github.com/masiraji/tabledown/tree/main/data-raw}
 "FFMQ.Val"
 
