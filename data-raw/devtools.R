@@ -48,7 +48,7 @@ fledge::bump_version()
 
 usethis::use_github()
 
-
+HJK
 
 #check for cran
 devtools::check_rhub()
