@@ -1,5 +1,5 @@
 # to create a Rproject
-devtools::create("baap")
+devtools::create("tabledown")
 
 devtools::document()
 devtools::load_all()
@@ -46,7 +46,32 @@ fledge::bump_version()
 
 
 
+usethis::use_github()
 
+
+
+#check for cran
+devtools::check_rhub()
+
+
+#Use vintage
+usethis::use_vignette()
+
+##License a package
+usethis::use_mit_license()
+usethis::use_gpl_license()
+
+
+
+#Cran Comments
+use_cran_comments()
+
+
+#Github links
+usethis::use_github_links()
+
+#Create vintages
+usethis::use_vignette("my-vignette")
 
 
 

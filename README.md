@@ -1,8 +1,8 @@
-# baap
+# tabledown
 
 <!-- badges: start -->
 
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) [![R-CMD-check](https://github.com/masiraji/baap/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/baap/actions) [![CRAN status](https://www.r-pkg.org/badges/version/baap)](https://CRAN.R-project.org/package=baap) [![metacran downloads](https://cranlogs.r-pkg.org/badges/baap)](https://cran.r-project.org/package=baap) [![thanks-md](https://img.shields.io/badge/THANKS-md-ff69b4.svg)](THANKS.md) [![license](https://img.shields.io/badge/license-GPL%20(%3E=3)-lightgrey.svg)](https://choosealicense.com/)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) [![R-CMD-check](https://github.com/masiraji/tabledown/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/tabledown/actions) [![CRAN status](https://www.r-pkg.org/badges/version/tabledown)](https://CRAN.R-project.org/package=tabledown) [![thanks-md](https://img.shields.io/badge/THANKS-md-ff69b4.svg)](THANKS.md) [![license](https://img.shields.io/badge/license-GPL%20(%3E=3)-lightgrey.svg)](https://choosealicense.com/)
 
 <!-- badges: end -->
 
@@ -12,11 +12,11 @@ This package includes data-frames and some interesting functions to create publi
 
 ## Installation
 
-You can install the development version of baap from [GitHub](https://github.com/) with:
+You can install the development version of tabledown from [GitHub](https://github.com/) with:
 
-``` r
+``` {.r}
 # install.packages("devtools")
-devtools::install_github("masiraji/baap")
+devtools::install_github("masiraji/tabledown")
 ```
 
 ## Example
@@ -25,13 +25,13 @@ devtools::install_github("masiraji/baap")
 
 Commonly it is very difficult to create a publication friendly table that summaries all necessary information of a factor analysis. This example will help you in that pursuit with the help of **fac.tab()** function
 
-    library(baap)
+    library(tabledown)
     library(tidyverse)
     library(psych)
     library(papaja)
 
-    Load the data from baap package
-    data <- baap::Rotter[, 11:31]
+    Load the data from tabledown package
+    data <- tabledown::Rotter[, 11:31]
 
     Create a correlational matrix to compute factor analysis
     correlations <- psych::polychoric(data, correct = 0)
@@ -40,7 +40,7 @@ Commonly it is very difficult to create a publication friendly table that summar
     residuals = TRUE, SMC = TRUE, n.obs =428)
 
 
-    table <- baap::fac.tab(fa.5F.1, .3, complexity = F)
+    table <- tabledown::fac.tab(fa.5F.1, .3, complexity = F)
 
     papaja::apa_table(table, caption= "A Beautiful Table describing the Fator analysis Output ")
 
@@ -51,13 +51,13 @@ Commonly it is very difficult to create a publication friendly table that summar
 When reporting the confirmatory factor analysis results, modern psychometrics suggest fitting several possible structural models of the latent construct and reporting the fit indices for them. [**lavan**](https://github.com/yrosseel/lavaan) package does a fantastic job doing the confirmatory factor analysis. Here we will see how to create a publication friendly summary of fit indices from several fitted models using **cfa.tab.multi()** function.
 
     {Load required packages}
-    library(baap)
+    library(tabledown)
     library(tidyverse)
     library(lavaan)
     library(papaja)
 
     load the data
-    data <- baap::FFMQ.CFA
+    data <- tabledown::FFMQ.CFA
 
      First CFA model
 
@@ -102,11 +102,11 @@ When reporting the confirmatory factor analysis results, modern psychometrics su
 
 In psychometrics conducting item-analysis is very common. [**psych**](https://cran.r-project.org/web/packages/psych/index.html) packages have provided enough tools to run the item analysis smoothly. Here we will create a publication friendly summary table of item analysis with all necessary information using function **des.tab()**
 
-     library(baap) 
+     library(tabledown) 
      library(tidyverse) 
      library(psych)
 
-    data <- baap::Rotter[, 11:31] 
+    data <- tabledown::Rotter[, 11:31] 
 
     table <- des.tab(data) papaja::apa_table(table, caption= "A Beautiful Table Summarizing the Output of Item Analysis ")
 

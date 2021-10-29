@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Companion Pack for the Book "Basic &amp; Advanced Psychometrics in R" • baap</title>
+<title>A Companion Pack for the Book "Basic &amp; Advanced Psychometrics in R" • tabledown</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
@@ -30,7 +30,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">baap</a>
+        <a class="navbar-link" href="index.html">tabledown</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.96</span>
       </span>
     </div>
@@ -54,7 +54,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="articles/Functions.html">package_intro</a>
+      <a href="articles/my-vignette.html">my-vignette</a>
     </li>
   </ul>
 </li>
@@ -64,7 +64,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/masiraji/baap/">
+  <a href="https://github.com/masiraji/tabledown/">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -81,9 +81,9 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="baap" class="section level1">
+<div id="tabledown" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#baap" class="anchor"></a>baap</h1></div>
+<a href="#tabledown" class="anchor"></a>tabledown</h1></div>
 <!-- badges: start -->
 
 <!-- badges: end -->
@@ -92,10 +92,9 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the development version of baap from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"masiraji/baap"</span><span class="op">)</span></code></pre></div>
+<p>You can install the development version of tabledown from <a href="https://github.com/">GitHub</a> with:</p>
+<pre class="{.r}"><code><a href="https://devtools.r-lib.org//reference/remote-reexports.html"># install.packages("devtools")
+devtools::install_github("masiraji/tabledown")</a></code></pre>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
@@ -104,13 +103,13 @@
 <h3 class="hasAnchor">
 <a href="#creating-a-summary-table-for-factor-analysis" class="anchor"></a>Creating A Summary Table for Factor Analysis</h3>
 <p>Commonly it is very difficult to create a publication friendly table that summaries all necessary information of a factor analysis. This example will help you in that pursuit with the help of <strong>fac.tab()</strong> function</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(baap)</span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tabledown)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(papaja)</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>Load the data from baap package</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> baap<span class="sc">::</span>Rotter[, <span class="dv">11</span><span class="sc">:</span><span class="dv">31</span>]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>Load the data from tabledown package</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> tabledown<span class="sc">::</span>Rotter[, <span class="dv">11</span><span class="sc">:</span><span class="dv">31</span>]</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>Create a correlational matrix to compute factor analysis</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>correlations <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">polychoric</span>(data, <span class="at">correct =</span> <span class="dv">0</span>)</span>
@@ -119,7 +118,7 @@
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="at">residuals =</span> <span class="cn">TRUE</span>, <span class="at">SMC =</span> <span class="cn">TRUE</span>, <span class="at">n.obs =</span><span class="dv">428</span>)</span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>table <span class="ot">&lt;-</span> baap<span class="sc">::</span><span class="fu">fac.tab</span>(fa<span class="fl">.5</span>F<span class="fl">.1</span>, .<span class="dv">3</span>, <span class="at">complexity =</span> F)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>table <span class="ot">&lt;-</span> tabledown<span class="sc">::</span><span class="fu">fac.tab</span>(fa<span class="fl">.5</span>F<span class="fl">.1</span>, .<span class="dv">3</span>, <span class="at">complexity =</span> F)</span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>papaja<span class="sc">::</span><span class="fu">apa_table</span>(table, <span class="at">caption=</span> <span class="st">"A Beautiful Table describing the Fator analysis Output "</span>)</span></code></pre></div>
 <p><img src="reference/figures/fac.tab.jpg" title="Table 1: A Beautiful Summary Table of Factor Analysis Output"></p>
@@ -129,13 +128,13 @@
 <a href="#creating-a-summary-table-of-fit-indices-in-confitmatory-factor-analyis" class="anchor"></a>Creating A Summary Table of Fit indices in Confitmatory Factor Analyis</h3>
 <p>When reporting the confirmatory factor analysis results, modern psychometrics suggest fitting several possible structural models of the latent construct and reporting the fit indices for them. <a href="https://github.com/yrosseel/lavaan"><strong>lavan</strong></a> package does a fantastic job doing the confirmatory factor analysis. Here we will see how to create a publication friendly summary of fit indices from several fitted models using <strong>cfa.tab.multi()</strong> function.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>{Load required packages}</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(baap)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tabledown)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lavaan)</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(papaja)</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>load the data</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> baap<span class="sc">::</span>FFMQ.CFA</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> tabledown<span class="sc">::</span>FFMQ.CFA</span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a> First CFA model</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
@@ -179,11 +178,11 @@
 <h3 class="hasAnchor">
 <a href="#creating-summary-table-for-item-analysis" class="anchor"></a>Creating Summary Table for Item Analysis</h3>
 <p>In psychometrics conducting item-analysis is very common. <a href="https://cran.r-project.org/web/packages/psych/index.html"><strong>psych</strong></a> packages have provided enough tools to run the item analysis smoothly. Here we will create a publication friendly summary table of item analysis with all necessary information using function <strong>des.tab()</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">library</span>(baap) </span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">library</span>(tabledown) </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">library</span>(tidyverse) </span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a> <span class="fu">library</span>(psych)</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> baap<span class="sc">::</span>Rotter[, <span class="dv">11</span><span class="sc">:</span><span class="dv">31</span>] </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> tabledown<span class="sc">::</span>Rotter[, <span class="dv">11</span><span class="sc">:</span><span class="dv">31</span>] </span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>table <span class="ot">&lt;-</span> <span class="fu">des.tab</span>(data) papaja<span class="sc">::</span><span class="fu">apa_table</span>(table, <span class="at">caption=</span> <span class="st">"A Beautiful Table Summarizing the Output of Item Analysis "</span>)</span></code></pre></div>
 <p><img src="reference/figures/item.analysis.jpg" alt="A Beautiful Summary Table of Item-Analysis"></p>
@@ -196,16 +195,16 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/masiraji/baap/">https://​github.com/​masiraji/​baap/​</a>
+<li>Browse source code at <br><a href="https://github.com/masiraji/tabledown/">https://​github.com/​masiraji/​tabledown/​</a>
 </li>
-<li>Report a bug at <br><a href="https://github.com/masiraji/baap/issues">https://​github.com/​masiraji/​baap/​issues</a>
+<li>Report a bug at <br><a href="https://github.com/masiraji/tabledown/issues">https://​github.com/​masiraji/​tabledown/​issues</a>
 </li>
 </ul>
 </div>
 <div class="license">
 <h2>License</h2>
 <ul class="list-unstyled">
-<li>GPL (&gt;=3)</li>
+<li>GPL (&gt;= 3)</li>
 </ul>
 </div>
 <div class="developers">
@@ -219,9 +218,8 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
-<li><a href="https://github.com/masiraji/baap/actions"><img src="https://github.com/masiraji/baap/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://CRAN.R-project.org/package=baap"><img src="https://www.r-pkg.org/badges/version/baap" alt="CRAN status"></a></li>
-<li><a href="https://cran.r-project.org/package=baap"><img src="https://cranlogs.r-pkg.org/badges/baap" alt="metacran downloads"></a></li>
+<li><a href="https://github.com/masiraji/tabledown/actions"><img src="https://github.com/masiraji/tabledown/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://CRAN.R-project.org/package=tabledown"><img src="https://www.r-pkg.org/badges/version/tabledown" alt="CRAN status"></a></li>
 <li><a href="THANKS.html"><img src="https://img.shields.io/badge/THANKS-md-ff69b4.svg" alt="thanks-md"></a></li>
 <li><a href="https://choosealicense.com/"><img src="https://img.shields.io/badge/license-GPL%20(%3E=3)-lightgrey.svg" alt="license"></a></li>
 </ul>

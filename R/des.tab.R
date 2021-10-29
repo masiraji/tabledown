@@ -3,7 +3,7 @@
 #' This function will create a publication ready essential descriptive table for item analysis.
 #' Normality is tested using shapiro.test from base stats with Bonferroni Correction.
 #'@examples
-#'data <- baap::Rotter[, 11:31]
+#'data <- tabledown::Rotter[, 11:31]
 #'table <- des.tab(data)
 #' @param df A data frame
 

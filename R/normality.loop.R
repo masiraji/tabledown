@@ -10,7 +10,7 @@
 #'
 #'
 #'@examples
-#'data <- baap::Rotter[, 11:31]
+#'data <- tabledown::Rotter[, 11:31]
 #'normality.loop(data)
 #'
 #'

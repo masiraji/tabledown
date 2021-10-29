@@ -9,7 +9,7 @@
 #' @param  cut The value under which all factor loading will be suppressed
 #' @param complexity To add complexity parameters
 #'@examples
-#'data <- baap::Rotter[, 11:31]
+#'data <- tabledown::Rotter[, 11:31]
 #'correlations <- psych::polychoric(data, correct = 0)
 #'fa.5F.1 <- psych::fa(r=correlations$rho, nfactors = 5, fm= "pa",rotate ="varimax",
 #'residuals = TRUE, SMC = TRUE, n.obs =428)

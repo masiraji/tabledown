@@ -15,7 +15,7 @@
 #' @param  robust If TRUE, will provide robust fit indices when applicable instead of the default indices.
 #'
 #'@examples
-#'data <- baap::FFMQ.CFA
+#'data <- tabledown::FFMQ.CFA
 #'FF.model.Original <- "Observe =~ item1 + item6 + item11 + item15 +
 #'item20 + item26 + item31 + item 36
 #'Describe =~ item2 + item7 + Ritem12 + Ritem16 + Ritem22 + item27 +

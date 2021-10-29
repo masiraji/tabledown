@@ -23,7 +23,7 @@ I have came across this beautiful piece of codes
 at https://www.anthonyschmidt.co/post/2020-09-27-efa-tables-in-r/ and modified it a bit.
 }
 \examples{
-data <- baap::Rotter[, 11:31]
+data <- tabledown::Rotter[, 11:31]
 correlations <- psych::polychoric(data, correct = 0)
 fa.5F.1 <- psych::fa(r=correlations$rho, nfactors = 5, fm= "pa",rotate ="varimax",
 residuals = TRUE, SMC = TRUE, n.obs =428)
