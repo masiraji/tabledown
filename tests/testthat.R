@@ -1,4 +1,4 @@
 library(testthat)
-library(baap)
+library(tabledown)
 
-test_check("baap")
+test_check("tabledown")

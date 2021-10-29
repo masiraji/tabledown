@@ -15,7 +15,7 @@ pkgdown::build_home(pkg = ".", override = list(), preview = NA, quiet = TRUE)
 #Badges
 usethis::use_cran_badge()
 usethis::use_github_links()
-badgecreatr::badge_cran_downloads("baap", period = NULL)
+badgecreatr::badge_cran_downloads("tabledown", period = NULL)
 badgecreatr::badge_thanks_md()
 badgecreatr::badge_license()
 usethis::use_lifecycle_badge("stable")

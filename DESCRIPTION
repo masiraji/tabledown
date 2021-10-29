@@ -5,13 +5,16 @@ Authors@R:
     person("Mushfiqul", "Anwar Siraji", , "siraji1993@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0003-0127-9982"))
 Description: This package is a companion R package for the Book " Basic and Advanced Psychometrics in R" [work in Progress]. This package includes data-frames and some interesting functions to create publication-friendly summary tables for factor analysis, confirmatory factor analysis and item analysis.
-License: GPL (>= 3)
+License: MIT + file LICENSE
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+URL: https://github.com/masiraji/tabledown
+BugReports: https://github.com/masiraji/tabledown/issues
+Language: en-US
 Depends: 
     R (>= 2.10)
-LazyData: true
 Imports:
     psych,
     MOTE,
@@ -30,7 +33,4 @@ Suggests:
     spelling,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
-URL: https://github.com/masiraji/tabledown
-BugReports: https://github.com/masiraji/tabledown/issues
-Language: en-US
 Config/testthat/edition: 3
