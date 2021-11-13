@@ -23,8 +23,8 @@ This packages includes some neat functions. Some of the functions presented here
 stack overflow and other resources that we find very helpful in formatting the outputs
 in a publication ready state.
 \enumerate{
-\item fac.table(): Creates a publication ready table from the output of psych based factor analysis.
-\item des.table(): Creates a publication ready descriptive table of Item analysis with the reporting of normality assumptions.
+\item fac.tab(): Creates a publication ready table from the output of psych based factor analysis.
+\item des.tab(): Creates a publication ready descriptive table of Item analysis with the reporting of normality assumptions.
 \item normality.loop(): Compute normality test on the whole data frame. No grouping required.
 \item bedTime(): Calculate total time spent in bed from the sleep log entry.
 \item cfa.tab():Creates a table with necessary fit indices from a lavaan class objects

@@ -1,5 +1,7 @@
+packrat::init()
+install.packages("devtools")
 # to create a Rproject
-devtools::create("tabledown")
+#devtools::create("MONASH")
 
 devtools::document()
 devtools::load_all()
@@ -23,8 +25,7 @@ usethis::use_lifecycle()
 
 #Usethis
 #Add file to project ignore
-usethis::use_build_ignore(c("data-raw", "docs", "index.Rmd, packages.bib","package.fig","THANKS.md"))
-
+usethis::use_build_ignore(c( "THANKS.md", "docs","LICENSE.md", "images"))
 #Get vaccinated
 usethis::git_vaccinate()
 usethis::use_build_ignore(".github")
@@ -48,7 +49,7 @@ fledge::bump_version()
 
 usethis::use_github()
 
-HJK
+
 
 #check for cran
 devtools::check_rhub()
@@ -73,8 +74,9 @@ usethis::use_github_links()
 #Create vintages
 usethis::use_vignette("my-vignette")
 
+remotes::install_github("masiraji/monashthesisdown")
 
-
-
+#creating Template
+usethis::use_rmarkdown_template("monashthesis")
 
 

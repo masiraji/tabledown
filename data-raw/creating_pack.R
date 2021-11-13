@@ -1,4 +1,4 @@
-
+packrat::init()
 # Run these from the R console
 
 # Check that the `usethis` package is installed. If not:
@@ -6,7 +6,7 @@ install.packages("usethis")
 
 # Create new package. Directory must not exist.
 # This also creates a new RStudio project.
-usethis::create_package("path/to/my/data/package/")
+usethis::create_package("monash")
 
 # Run this code after opening the new package in RStudio
 

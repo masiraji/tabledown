@@ -14,8 +14,8 @@
 #'This packages includes some neat functions. Some of the functions presented here are from
 #'stack overflow and other resources that we find very helpful in formatting the outputs
 #'in a publication ready state.
-#'1. fac.table(): Creates a publication ready table from the output of psych based factor analysis.
-#'2. des.table(): Creates a publication ready descriptive table of Item analysis with the reporting of normality assumptions.
+#'1. fac.tab(): Creates a publication ready table from the output of psych based factor analysis.
+#'2. des.tab(): Creates a publication ready descriptive table of Item analysis with the reporting of normality assumptions.
 #'3. normality.loop(): Compute normality test on the whole data frame. No grouping required.
 #'4. bedTime(): Calculate total time spent in bed from the sleep log entry.
 #'5. cfa.tab():Creates a table with necessary fit indices from a lavaan class objects
