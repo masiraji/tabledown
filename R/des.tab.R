@@ -23,6 +23,6 @@ des.tab <- function(df){
  sig <-(normality.test$significance)
  Normality <- paste(statistics, sig, sep = "" )
  des.tab <-as.data.frame((cbind(Mean, SD, Skew,Kurtosis,  Normality,Item.total.correlation)))
-
+ des.tab
 
   }

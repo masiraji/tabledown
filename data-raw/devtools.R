@@ -32,6 +32,7 @@ usethis::use_build_ignore(".github")
 #Spelling
 usethis::use_spell_check()
 
+
 #Use magrittr's pipe in your package
 usethis::use_pipe()
 
@@ -79,4 +80,4 @@ remotes::install_github("masiraji/monashthesisdown")
 #creating Template
 usethis::use_rmarkdown_template("monashthesis")
 
-
+psychoshiny::psychoshiny()
