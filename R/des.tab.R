@@ -17,12 +17,13 @@ des.tab <- function(df){
   Skew <-MOTE::apa(Descriptives$skew,2,T)
   Kurtosis <- MOTE::apa(Descriptives$kurtosis,2,T)
   alpha <- psych::alpha(df)
-  Item.total.correlation <- MOTE::apa(alpha$item.stats$r.cor,2,T)
-  normality.test <-normality.loop(df)
+  Corrected.item.total.correlation <- MOTE::apa(alpha$item.stats$r.cor,2,T)
+normality.test <-normality.loop(df)
  statistics <-MOTE::apa(normality.test$statistic,2,T)
  sig <-(normality.test$significance)
  Normality <- paste(statistics, sig, sep = "" )
- des.tab <-as.data.frame((cbind(Mean, SD, Skew,Kurtosis,  Normality,Item.total.correlation)))
+ des.tab <-as.data.frame((cbind(Mean, SD, Skew,Kurtosis,  Normality,Corrected.item.total.correlation))) %>%
+   tibble::rownames_to_column("item")
  des.tab
 
   }
