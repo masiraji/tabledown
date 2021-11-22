@@ -10,8 +10,6 @@
 
 #' @export
 des.tab <- function(df){
-
-
   Descriptives <- psych::describe(df)
   Mean <-MOTE::apa(Descriptives$mean,2,T)
   SD <-MOTE::apa(Descriptives$sd,2,T)
