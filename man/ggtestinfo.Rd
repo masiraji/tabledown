@@ -21,7 +21,7 @@ Using ggplot2 will enable the user to modify the Item plot in many ways
 }
 \examples{
 data <- tabledown::Rotter[, 11:31]
-model <- mirt(data, model = 1, itemtype = '2PL')
+model <- mirt::mirt(data, model = 1, itemtype = '2PL')
 
 plot <- ggtestinfo(data, model)
 }

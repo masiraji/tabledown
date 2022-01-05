@@ -25,7 +25,9 @@ Imports:
     data.table,
     tidyselect,
     lavaan,
-    lifecycle
+    lifecycle,
+    mirt,
+    ggplot2
 Suggests: 
     rmarkdown,
     knitr,

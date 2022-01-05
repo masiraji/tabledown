@@ -157,37 +157,38 @@ his is a good alternative of dlookr function. Here normality is tested using sha
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='va'>data</span> <span class='op'>&lt;-</span> <span class='fu'>tabledown</span><span class='fu'>::</span><span class='va'><a href='Rotter.html'>Rotter</a></span><span class='op'>[</span>, <span class='fl'>11</span><span class='op'>:</span><span class='fl'>31</span><span class='op'>]</span>
-<span class='fu'>normality.loop</span><span class='op'>(</span><span class='va'>data</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; $statistic
-#&gt;   item2.W   item3.W   item4.W   item5.W   item6.W   item7.W   item9.W  item10.W 
-#&gt; 0.4687783 0.3984029 0.6346962 0.4389197 0.6054954 0.4115381 0.5840242 0.3173180 
-#&gt;  item11.W  item12.W  item13.W  item15.W  item16.W  item17.W  item18.W  item20.W 
-#&gt; 0.6362266 0.6342364 0.6349068 0.6342364 0.5789720 0.5018625 0.4835846 0.6364813 
-#&gt;  item21.W  item22.W  item23.W  item25.W  item26.W 
-#&gt; 0.5375357 0.5708925 0.3509070 0.6016894 0.5621908 
-#&gt; 
-#&gt; $p.value
-#&gt;        item2        item3        item4        item5        item6        item7 
-#&gt; 2.653088e-35 6.227311e-37 1.248056e-30 5.155272e-36 1.462305e-31 1.219678e-36 
-#&gt;        item9       item10       item11       item12       item13       item15 
-#&gt; 3.271646e-32 1.255529e-38 1.401678e-30 1.205368e-30 1.268128e-30 1.205368e-30 
-#&gt;       item16       item17       item18       item20       item21       item22 
-#&gt; 2.320927e-32 1.781982e-34 6.146609e-35 1.429076e-30 1.562937e-33 1.349463e-32 
-#&gt;       item23       item25       item26 
-#&gt; 6.027334e-38 1.116209e-31 7.593841e-33 
-#&gt; 
-#&gt; $significance
-#&gt;  item2  item3  item4  item5  item6  item7  item9 item10 item11 item12 item13 
-#&gt;    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*" 
-#&gt; item15 item16 item17 item18 item20 item21 item22 item23 item25 item26 
-#&gt;    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*" 
-#&gt; 
-#&gt; $method
-#&gt; [1] "Shapiro-Wilks test with Bonferroni Correction"
-#&gt; </div><div class='input'>
-
-</div></pre>
+    <pre class="examples"><span class='r-in'><span class='va'>data</span> <span class='op'>&lt;-</span> <span class='fu'>tabledown</span><span class='fu'>::</span><span class='va'><a href='Rotter.html'>Rotter</a></span><span class='op'>[</span>, <span class='fl'>11</span><span class='op'>:</span><span class='fl'>31</span><span class='op'>]</span></span>
+<span class='r-in'><span class='fu'>normality.loop</span><span class='op'>(</span><span class='va'>data</span><span class='op'>)</span></span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> $statistic</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>   item2.W   item3.W   item4.W   item5.W   item6.W   item7.W   item9.W  item10.W </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 0.4687783 0.3984029 0.6346962 0.4389197 0.6054954 0.4115381 0.5840242 0.3173180 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>  item11.W  item12.W  item13.W  item15.W  item16.W  item17.W  item18.W  item20.W </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 0.6362266 0.6342364 0.6349068 0.6342364 0.5789720 0.5018625 0.4835846 0.6364813 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>  item21.W  item22.W  item23.W  item25.W  item26.W </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 0.5375357 0.5708925 0.3509070 0.6016894 0.5621908 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> $p.value</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>        item2        item3        item4        item5        item6        item7 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 2.653088e-35 6.227311e-37 1.248056e-30 5.155272e-36 1.462305e-31 1.219678e-36 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>        item9       item10       item11       item12       item13       item15 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 3.271646e-32 1.255529e-38 1.401678e-30 1.205368e-30 1.268128e-30 1.205368e-30 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>       item16       item17       item18       item20       item21       item22 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 2.320927e-32 1.781982e-34 6.146609e-35 1.429076e-30 1.562937e-33 1.349463e-32 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>       item23       item25       item26 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 6.027334e-38 1.116209e-31 7.593841e-33 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> $significance</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>  item2  item3  item4  item5  item6  item7  item9 item10 item11 item12 item13 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*" </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> item15 item16 item17 item18 item20 item21 item22 item23 item25 item26 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*"    "*" </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> $method</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> [1] "Shapiro-Wilks test with Bonferroni Correction"</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-in'></span>
+<span class='r-in'></span>
+</pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

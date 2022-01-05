@@ -23,7 +23,7 @@ Using ggplot2 will enable the user to modify the Item Information plot in many w
 }
 \examples{
 data <- tabledown::Rotter[, 11:31]
-model <- mirt(data, model = 1, itemtype = '2PL')
+model <- mirt::mirt(data, model = 1, itemtype = '2PL')
 
 plot <- ggiteminfo(model, 1, 3)
 }

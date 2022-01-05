@@ -8,7 +8,7 @@
 #' @param  model A mirt package fitted object
 #'@examples
 #'data <- tabledown::Rotter[, 11:31]
-#'model <- mirt(data, model = 1, itemtype = '2PL')
+#'model <- mirt::mirt(data, model = 1, itemtype = '2PL')
 #'
 #'plot <- ggtestinfo(data, model)
 #'@return
@@ -25,8 +25,8 @@ ggtestinfo <- function(dataframe,model){
   }
 
   data <- as.data.frame(cbind(Theta, T1))
-  plot <-  ggplot(data, aes(x=Theta, y=T1)) +
-    geom_line() +labs(y="Test Information")
+  plot <-  ggplot2::ggplot(data, ggplot2::aes(x=Theta, y=T1)) +
+    ggplot2::geom_line() + ggplot2::labs(y="Test Information")
   return(plot)
 }
 

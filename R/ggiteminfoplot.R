@@ -9,7 +9,7 @@
 #' @param theta Theta range. Put only one number. Theta =3 will be considered as theta range (-3 to 3)
 #'@examples
 #'data <- tabledown::Rotter[, 11:31]
-#'model <- mirt(data, model = 1, itemtype = '2PL')
+#'model <- mirt::mirt(data, model = 1, itemtype = '2PL')
 #'
 #'plot <- ggiteminfo(model, 1, 3)
 #'@return
@@ -23,8 +23,8 @@ ggiteminfo <- function (model, item, theta){
   iteminfo <- mirt::extract.item(model, item)
   information <- mirt::iteminfo(iteminfo, Theta)
   data <- as.data.frame(cbind(Theta, information))
-  plot <- ggplot(data, aes(x=Theta, y=information)) +
-    geom_line()  +labs(y="Item Information")
+  plot <- ggplot2::ggplot(data, ggplot2::aes(x=Theta, y=information)) +
+    ggplot2::geom_line()+ggplot2::labs(y="Item Information")
   return(plot)
 
 }
