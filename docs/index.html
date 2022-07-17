@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,23 +33,17 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">tabledown</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.98</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.0.101</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -64,7 +60,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/masiraji/tabledown/">
+  <a href="https://github.com/masiraji/tabledown/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -81,27 +77,28 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="tabledown" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#tabledown" class="anchor"></a>tabledown</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="tabledown">tabledown<a class="anchor" aria-label="anchor" href="#tabledown"></a>
+</h1></div>
 <!-- badges: start -->
 
 <!-- badges: end -->
 <p>This package is a companion R package for the Book ” Basic and Advanced Psychometrics in R” [work in Progress]</p>
 <p>This package includes data-frames and some interesting functions to create publication-friendly summary tables for factor analysis, confirmatory factor analysis and item analysis.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the development version of tabledown from <a href="https://github.com/">GitHub</a> with:</p>
-<pre class="{.r}"><code># install.packages("devtools")
-devtools::install_github("masiraji/tabledown")</code></pre>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the development version of tabledown from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"masiraji/tabledown"</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<div id="creating-a-summary-table-for-factor-analysis" class="section level3">
-<h3 class="hasAnchor">
-<a href="#creating-a-summary-table-for-factor-analysis" class="anchor"></a>Creating A Summary Table for Factor Analysis</h3>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
+<div class="section level3">
+<h3 id="creating-a-summary-table-for-factor-analysis">Creating A Summary Table for Factor Analysis<a class="anchor" aria-label="anchor" href="#creating-a-summary-table-for-factor-analysis"></a>
+</h3>
 <p>Commonly it is very difficult to create a publication friendly table that summaries all necessary information of a factor analysis. This example will help you in that pursuit with the help of <strong>fac.tab()</strong> function</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tabledown)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -123,10 +120,10 @@ devtools::install_github("masiraji/tabledown")</code></pre>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>papaja<span class="sc">::</span><span class="fu">apa_table</span>(table, <span class="at">caption=</span> <span class="st">"A Beautiful Table describing the Fator analysis Output "</span>)</span></code></pre></div>
 <p><img src="reference/figures/fac.tab.jpg" title="Table 1: A Beautiful Summary Table of Factor Analysis Output"></p>
 </div>
-<div id="creating-a-summary-table-of-fit-indices-in-confitmatory-factor-analyis" class="section level3">
-<h3 class="hasAnchor">
-<a href="#creating-a-summary-table-of-fit-indices-in-confitmatory-factor-analyis" class="anchor"></a>Creating A Summary Table of Fit indices in Confitmatory Factor Analyis</h3>
-<p>When reporting the confirmatory factor analysis results, modern psychometrics suggest fitting several possible structural models of the latent construct and reporting the fit indices for them. <a href="https://github.com/yrosseel/lavaan"><strong>lavan</strong></a> package does a fantastic job doing the confirmatory factor analysis. Here we will see how to create a publication friendly summary of fit indices from several fitted models using <strong>cfa.tab.multi()</strong> function.</p>
+<div class="section level3">
+<h3 id="creating-a-summary-table-of-fit-indices-in-confitmatory-factor-analyis">Creating A Summary Table of Fit indices in Confitmatory Factor Analyis<a class="anchor" aria-label="anchor" href="#creating-a-summary-table-of-fit-indices-in-confitmatory-factor-analyis"></a>
+</h3>
+<p>When reporting the confirmatory factor analysis results, modern psychometrics suggest fitting several possible structural models of the latent construct and reporting the fit indices for them. <a href="https://github.com/yrosseel/lavaan" class="external-link"><strong>lavan</strong></a> package does a fantastic job doing the confirmatory factor analysis. Here we will see how to create a publication friendly summary of fit indices from several fitted models using <strong>cfa.tab.multi()</strong> function.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>{Load required packages}</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tabledown)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -172,12 +169,14 @@ devtools::install_github("masiraji/tabledown")</code></pre>
 <span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>table <span class="ot">&lt;-</span> <span class="fu">cfa.tab.multi</span>(fit.original, fit.Cor, fit.short, <span class="at">robust =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>papaja<span class="sc">::</span><span class="fu">apa_table</span>(table, <span class="at">caption=</span> <span class="st">"A Beautiful Table describing the Fit Indices of Three Fitted Model "</span>)</span></code></pre></div>
-<p><img src="reference/figures/cfa.tab.jpg" alt="A Beautiful Summary Table of Fit Indices of Three Fitted CFA Models"></p>
+<div class="figure">
+<img src="reference/figures/cfa.tab.jpg" alt=""><p class="caption">A Beautiful Summary Table of Fit Indices of Three Fitted CFA Models</p>
 </div>
-<div id="creating-summary-table-for-item-analysis" class="section level3">
-<h3 class="hasAnchor">
-<a href="#creating-summary-table-for-item-analysis" class="anchor"></a>Creating Summary Table for Item Analysis</h3>
-<p>In psychometrics conducting item-analysis is very common. <a href="https://cran.r-project.org/web/packages/psych/index.html"><strong>psych</strong></a> packages have provided enough tools to run the item analysis smoothly. Here we will create a publication friendly summary table of item analysis with all necessary information using function <strong>des.tab()</strong></p>
+</div>
+<div class="section level3">
+<h3 id="creating-summary-table-for-item-analysis">Creating Summary Table for Item Analysis<a class="anchor" aria-label="anchor" href="#creating-summary-table-for-item-analysis"></a>
+</h3>
+<p>In psychometrics conducting item-analysis is very common. <a href="https://cran.r-project.org/web/packages/psych/index.html" class="external-link"><strong>psych</strong></a> packages have provided enough tools to run the item analysis smoothly. Here we will create a publication friendly summary table of item analysis with all necessary information using function <strong>des.tab()</strong></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">library</span>(tabledown) </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">library</span>(tidyverse) </span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a> <span class="fu">library</span>(psych)</span>
@@ -185,7 +184,9 @@ devtools::install_github("masiraji/tabledown")</code></pre>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> tabledown<span class="sc">::</span>Rotter[, <span class="dv">11</span><span class="sc">:</span><span class="dv">31</span>] </span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>table <span class="ot">&lt;-</span> <span class="fu">des.tab</span>(data) papaja<span class="sc">::</span><span class="fu">apa_table</span>(table, <span class="at">caption=</span> <span class="st">"A Beautiful Table Summarizing the Output of Item Analysis "</span>)</span></code></pre></div>
-<p><img src="reference/figures/item.analysis.jpg" alt="A Beautiful Summary Table of Item-Analysis"></p>
+<div class="figure">
+<img src="reference/figures/item.analysis.jpg" alt=""><p class="caption">A Beautiful Summary Table of Item-Analysis</p>
+</div>
 </div>
 </div>
 </div>
@@ -193,47 +194,58 @@ devtools::install_github("masiraji/tabledown")</code></pre>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/masiraji/tabledown/">https://​github.com/​masiraji/​tabledown/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/masiraji/tabledown/issues">https://​github.com/​masiraji/​tabledown/​issues</a>
-</li>
-</ul>
-</div>
-<div class="license">
-<h2>License</h2>
-<ul class="list-unstyled">
-<li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
-</ul>
-</div>
-<div class="developers">
-<h2>Developers</h2>
-<ul class="list-unstyled">
-<li>Mushfiqul Anwar Siraji <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/https://orcid.org/0000-0003-0127-9982" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="https://github.com/masiraji/tabledown/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/masiraji/tabledown/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="license">
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
-<li><a href="https://github.com/masiraji/tabledown/actions"><img src="https://github.com/masiraji/tabledown/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="THANKS.html"><img src="https://img.shields.io/badge/THANKS-md-ff69b4.svg" alt="thanks-md"></a></li>
-<li><a href="https://choosealicense.com/"><img src="https://img.shields.io/badge/license-MIT%20+%20file%20LICENSE-lightgrey.svg" alt="license"></a></li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing tabledown</a></li>
+</ul>
 </div>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
+<ul class="list-unstyled">
+<li>Mushfiqul Anwar Siraji <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/https://orcid.org/0000-0003-0127-9982" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+</ul>
+</div>
+
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
+<li><a href="https://github.com/masiraji/tabledown/actions" class="external-link"><img src="https://github.com/masiraji/tabledown/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="THANKS.html"><img src="https://img.shields.io/badge/THANKS-md-ff69b4.svg" alt="thanks-md"></a></li>
+<li><a href="https://choosealicense.com/" class="external-link"><img src="https://img.shields.io/badge/license-MIT%20+%20file%20LICENSE-lightgrey.svg" alt="license"></a></li>
+</ul>
+</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Mushfiqul Anwar Siraji.</p>
+  <p></p>
+<p>Developed by Mushfiqul Anwar Siraji.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer>
@@ -241,6 +253,8 @@ devtools::install_github("masiraji/tabledown")</code></pre>
 
   
 
+
+  
 
   </body>
 </html>
