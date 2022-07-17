@@ -11,20 +11,23 @@
 #'data <- tabledown::Rotter[, 11:31]
 #'model <- mirt::mirt(data, model = 1, itemtype = '2PL')
 #'
-#'plot <- ggiteminfo(model, 1, 3)
+#'plot <- ggicc(model, 1, 3)
 #'@return
 #'A publication quality item information plot
 
 
 #'@importFrom mirt extract.item iteminfo
 #' @export
-ggiteminfo <- function (model, item, theta){
+ggicc <- function(model, item, theta){
   Theta <- matrix(seq(-theta,theta, by = .1))
   iteminfo <- mirt::extract.item(model, item)
-  information <- mirt::iteminfo(iteminfo, Theta)
-  data <- as.data.frame(cbind(Theta, information))
-  plot <- ggplot2::ggplot(data, ggplot2::aes(x=Theta, y=information)) +
-    ggplot2::geom_line()+ggplot2::labs(y="Item Information")
+  P <-mirt::probtrace(x=iteminfo , Theta=Theta  )
+  icc <- data.frame(P = P, Theta = Theta)
+  colnames(icc) <- c(paste("P", 1:ncol(P), sep=''), "Theta")
+  icc2<- reshape(icc, direction='long', varying = paste("P", 1:ncol(P), sep=''), v.names = 'P',
+                 times = paste("P", 1:ncol(P), sep=''))
+  plot <- ggplot2::ggplot(icc2,aes(Theta,P, col =time))+geom_line()+xlab(expression(theta)) +
+    ylab(expression(I(theta)))+ theme(legend.title=element_blank())
   return(plot)
 
 }
