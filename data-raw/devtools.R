@@ -25,7 +25,7 @@ usethis::use_lifecycle()
 
 #Usethis
 #Add file to project ignore
-usethis::use_build_ignore(c( "THANKS.md", "docs","LICENSE.md", "images"))
+usethis::use_build_ignore(c( "THANKS.md", "docs","LICENSE.md", "images", "cran-comments.md", ".DS_Store"))
 #Get vaccinated
 usethis::git_vaccinate()
 usethis::use_build_ignore(".github")

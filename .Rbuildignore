@@ -9,3 +9,5 @@
 ^THANKS\.md$
 ^LICENSE\.md$
 ^images$
+^cran-comments\.md$
+^\.DS_Store$

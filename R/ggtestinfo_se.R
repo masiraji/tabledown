@@ -29,7 +29,7 @@ ggtestinfo_se <- function(dataframe,model){
   data <- as.data.frame(cbind(Theta, T1, se))
   p1 <-  ggplot2::ggplot(data, ggplot2::aes(x=Theta, y=T1)) +
     ggplot2::geom_line() + ggplot2::labs(y="Test Information")+
-    geom_line(data = data,linetype = "dashed",color = "red", aes(x=Theta, y=se))
+    ggplot2::geom_line(data = data,linetype = "dashed",color = "red", ggplot2::aes(x=Theta, y=se))
 
   return(p1)
 }

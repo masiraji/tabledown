@@ -9,14 +9,17 @@
 #' @param theta Theta range. Put only one number. Theta =3 will be considered as theta range (-3 to 3)
 #'@examples
 #'data <- tabledown::Rotter[, 11:31]
-#'model <- mirt::mirt(data, model = 1, itemtype = '2PL')
+#'model <- mirt::mirt(data, model = 1, itemtype = '2PL', SE = TRUE, Se.type = 'MHRM')
 #'
-#'plot <- ggicc(model, 1, 3)
+#'plot <- tabledown::ggicc(model, 1, 3)
 #'@return
 #'A publication quality item information plot
 
 
 #'@importFrom mirt extract.item iteminfo
+#'
+#'@importFrom stats reshape time
+
 #' @export
 ggicc <- function(model, item, theta){
   Theta <- matrix(seq(-theta,theta, by = .1))
@@ -26,8 +29,8 @@ ggicc <- function(model, item, theta){
   colnames(icc) <- c(paste("P", 1:ncol(P), sep=''), "Theta")
   icc2<- reshape(icc, direction='long', varying = paste("P", 1:ncol(P), sep=''), v.names = 'P',
                  times = paste("P", 1:ncol(P), sep=''))
-  plot <- ggplot2::ggplot(icc2,aes(Theta,P, col =time))+geom_line()+xlab(expression(theta)) +
-    ylab(expression(I(theta)))+ theme(legend.title=element_blank())
+  plot <- ggplot2::ggplot(icc2, ggplot2::aes(Theta,P, col =time))+ggplot2::geom_line()+ggplot2::xlab(expression(theta)) +
+    ggplot2::ylab(expression(I(theta)))+ ggplot2::theme(legend.title=ggplot2::element_blank())
   return(plot)
 
 }
