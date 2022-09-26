@@ -46,9 +46,9 @@ Commonly it is very difficult to create a publication friendly table that summar
 
 ![](man/figures/fac.tab.jpg "Table 1: A Beautiful Summary Table of Factor Analysis Output")
 
-### Creating A Summary Table of Fit indices in Confitmatory Factor Analyis
+### Creating A Summary Table of Fit indices in Confirmatory Factor Analysis
 
-When reporting the confirmatory factor analysis results, modern psychometrics suggest fitting several possible structural models of the latent construct and reporting the fit indices for them. [**lavan**](https://github.com/yrosseel/lavaan) package does a fantastic job doing the confirmatory factor analysis. Here we will see how to create a publication friendly summary of fit indices from several fitted models using **cfa.tab.multi()** function.
+When reporting the confirmatory factor analysis results, modern psychometrics suggest fitting several possible structural models of the latent construct and reporting the fit indices for them. [**lavaan**](https://github.com/yrosseel/lavaan) package does a fantastic job doing the confirmatory factor analysis. Here we will see how to create a publication friendly summary of fit indices from several fitted models using **cfa.tab.multi()** function.
 
     {Load required packages}
     library(tabledown)

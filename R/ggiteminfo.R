@@ -2,7 +2,7 @@
 #'
 #' This function will create publication worthy IRT item characteristic plot using ggplot2 from objects created from
 #' mirt pack.
-#' Using ggplot2 will enable the user to modify the tem characteristic plot in many ways
+#' Using ggplot2 will enable the user to modify the item characteristic plot in many ways
 #'
 #' @param  model A mirt package fitted object
 #' @param  item Item number (i.e. 1,2,3,4)
