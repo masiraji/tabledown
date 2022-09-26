@@ -1,4 +1,4 @@
-#' tabledown: A Companion of the book "Basic and Advanced Psychometrics in R"
+#' This pacakge is a companion of the book "Basic and Advanced Psychometrics in R"
 #'
 #' The tabledown package provides necessary data frames used throughout the book and some neat functions.
 #'

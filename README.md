@@ -160,7 +160,7 @@ When reporting the confirmatory factor analysis results, modern psychometrics su
 
 ### Creating Summary Table for Item Analysis
 
-In psychometrics conducting item-analysis is very common. [**psych**](https://cran.r-project.org/web/packages/psych/index.html) packages have provided enough tools to run the item analysis smoothly. Here we will create a publication friendly summary table of item analysis with all necessary information using function **des.tab()**
+In psychometrics conducting item-analysis is very common. [**psych**](https://Cran.R-project.org/package=psych) packages have provided enough tools to run the item analysis smoothly. Here we will create a publication friendly summary table of item analysis with all necessary information using function **des.tab()**
 
      library(tabledown) 
      library(tidyverse) 
