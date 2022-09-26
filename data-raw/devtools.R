@@ -85,7 +85,12 @@ psychoshiny::psychoshiny()
 
 
 #Releasing the package in CRAN
+
+devtools::check_rhub()
+
 devtools::release()
 
 
 fledge::bump_version("patch")
+
+lifecycle::sta

@@ -3,7 +3,7 @@
 \docType{package}
 \name{tabledown}
 \alias{tabledown}
-\title{tabledown: A Companion of the book "Basic and Advanced Psychometrics in R"}
+\title{This pacakge is a companion of the book "Basic and Advanced Psychometrics in R"}
 \description{
 The tabledown package provides necessary data frames used throughout the book and some neat functions.
 }
