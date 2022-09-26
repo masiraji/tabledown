@@ -16,7 +16,6 @@
 
 
 #'@importFrom mirt extract.item iteminfo
-#'@importFrom ggplot2 aes, theme
 #'
 #' @export
 ggtestinfo_se <- function(dataframe,model){
