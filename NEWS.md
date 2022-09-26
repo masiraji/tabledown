@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tabledown 0.0.2
+
+- Internal changes only.
+
+
 # tabledown 0.0.1
 
 - Same as previous version.
