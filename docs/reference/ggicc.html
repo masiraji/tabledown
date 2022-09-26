@@ -27,16 +27,6 @@ Using ggplot2 will enable the user to modify the Item Information plot in many w
       <ul class="nav navbar-nav"><li>
   <a href="../reference/index.html">Reference</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Articles
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu"><li>
-      <a href="../articles/my-vignette.html">my-vignette</a>
-    </li>
-  </ul></li>
 <li>
   <a href="../news/index.html">Changelog</a>
 </li>
@@ -56,7 +46,7 @@ Using ggplot2 will enable the user to modify the Item Information plot in many w
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>A Function for Creating  Publication Quality IRT Item plot</h1>
-    <small class="dont-index">Source: <a href="https://github.com/masiraji/tabledown/blob/HEAD/R/ggiteminfoplot.R" class="external-link"><code>R/ggiteminfoplot.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/masiraji/tabledown/blob/HEAD/R/ggicc.R" class="external-link"><code>R/ggicc.R</code></a></small>
     <div class="hidden name"><code>ggicc.Rd</code></div>
     </div>
 
@@ -94,11 +84,12 @@ Using ggplot2 will enable the user to modify the Item Information plot in many w
     <div id="ref-examples">
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">tabledown</span><span class="fu">::</span><span class="va"><a href="Rotter.html">Rotter</a></span><span class="op">[</span>, <span class="fl">11</span><span class="op">:</span><span class="fl">31</span><span class="op">]</span></span></span>
-<span class="r-in"><span><span class="va">model</span> <span class="op">&lt;-</span> <span class="fu">mirt</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/mirt/man/mirt.html" class="external-link">mirt</a></span><span class="op">(</span><span class="va">data</span>, model <span class="op">=</span> <span class="fl">1</span>, itemtype <span class="op">=</span> <span class="st">'2PL'</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">model</span> <span class="op">&lt;-</span> <span class="fu">mirt</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/mirt/man/mirt.html" class="external-link">mirt</a></span><span class="op">(</span><span class="va">data</span>, model <span class="op">=</span> <span class="fl">1</span>, itemtype <span class="op">=</span> <span class="st">'2PL'</span>, SE <span class="op">=</span> <span class="cn">TRUE</span>, Se.type <span class="op">=</span> <span class="st">'MHRM'</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Iteration: 1, Log-Lik: -5444.747, Max-Change: 0.56424Iteration: 2, Log-Lik: -5374.008, Max-Change: 0.30858Iteration: 3, Log-Lik: -5357.722, Max-Change: 0.17532Iteration: 4, Log-Lik: -5353.406, Max-Change: 0.09162Iteration: 5, Log-Lik: -5352.045, Max-Change: 0.06068Iteration: 6, Log-Lik: -5351.603, Max-Change: 0.03828Iteration: 7, Log-Lik: -5351.412, Max-Change: 0.01627Iteration: 8, Log-Lik: -5351.383, Max-Change: 0.01187Iteration: 9, Log-Lik: -5351.371, Max-Change: 0.00751Iteration: 10, Log-Lik: -5351.365, Max-Change: 0.00390Iteration: 11, Log-Lik: -5351.364, Max-Change: 0.00344Iteration: 12, Log-Lik: -5351.363, Max-Change: 0.00026Iteration: 13, Log-Lik: -5351.363, Max-Change: 0.00024Iteration: 14, Log-Lik: -5351.363, Max-Change: 0.00109Iteration: 15, Log-Lik: -5351.363, Max-Change: 0.00081Iteration: 16, Log-Lik: -5351.363, Max-Change: 0.00031Iteration: 17, Log-Lik: -5351.363, Max-Change: 0.00011Iteration: 18, Log-Lik: -5351.363, Max-Change: 0.00054Iteration: 19, Log-Lik: -5351.363, Max-Change: 0.00012Iteration: 20, Log-Lik: -5351.363, Max-Change: 0.00035Iteration: 21, Log-Lik: -5351.363, Max-Change: 0.00010</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Calculating information matrix...</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="va">plot</span> <span class="op">&lt;-</span> <span class="fu">ggicc</span><span class="op">(</span><span class="va">model</span>, <span class="fl">1</span>, <span class="fl">3</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in aes(Theta, P, col = time):</span> could not find function "aes"</span>
+<span class="r-in"><span><span class="va">plot</span> <span class="op">&lt;-</span> <span class="fu">tabledown</span><span class="fu">::</span><span class="fu">ggicc</span><span class="op">(</span><span class="va">model</span>, <span class="fl">1</span>, <span class="fl">3</span><span class="op">)</span></span></span>
 </code></pre></div>
     </div>
   </div>
