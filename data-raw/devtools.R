@@ -89,7 +89,7 @@ psychoshiny::psychoshiny()
 devtools::check_rhub()
 
 devtools::release()
-
+devtools::check_win_devel()
 
 fledge::bump_version("patch")
 
