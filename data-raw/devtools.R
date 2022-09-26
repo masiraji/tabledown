@@ -46,8 +46,8 @@ devtools::install_github("cynkra/fledge")
 
 fledge::bump_version()
 
-
-
+fledge::tag_version()
+fledge::finalize_version()
 usethis::use_github()
 
 
@@ -85,3 +85,6 @@ psychoshiny::psychoshiny()
 
 #Releasing the package in CRAN
 devtools::release()
+
+
+fledge::bump_version("patch")
