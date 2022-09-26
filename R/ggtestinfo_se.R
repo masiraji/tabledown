@@ -16,20 +16,24 @@
 
 
 #'@importFrom mirt extract.item iteminfo
+#'@importFrom ggplot2 aes, theme
+#'
 #' @export
 ggtestinfo_se <- function(dataframe,model){
   Theta <- matrix(seq(-6,6, by = .1))
   T1 <- 0
-  se <- 0
+
   for(i in 1:ncol(dataframe)){
     T1 <- T1 + mirt::iteminfo(extract.item(model, i), Theta)
     se <- 1/(sqrt(T1))
   }
 
   data <- as.data.frame(cbind(Theta, T1, se))
-  p1 <-  ggplot2::ggplot(data, ggplot2::aes(x=Theta, y=T1)) +
-    ggplot2::geom_line() + ggplot2::labs(y="Test Information")+
-    ggplot2::geom_line(data = data,linetype = "dashed",color = "red", ggplot2::aes(x=Theta, y=se))
+  p1 <- ggplot2::ggplot(data, ggplot2::aes(x=Theta, y=T1)) +
+    ggplot2::geom_line()+
+    ggplot2::geom_line(data = data,linetype = "dashed",color = "red", ggplot2::aes(x=Theta, y=se))+
+    ggplot2::xlab(expression(theta)) +
+    ggplot2::ylab(expression(I(theta)))+ ggplot2::theme(legend.title=ggplot2::element_blank())
 
   return(p1)
 }

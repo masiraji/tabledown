@@ -19,7 +19,67 @@ You can install the development version of tabledown from [GitHub](https://githu
 devtools::install_github("masiraji/tabledown")
 ```
 
-## Example
+## Examples
+
+### Creating publication ready plots for Item Response Theory (IRT) Models.
+IRT analysis is highly depended on visual representation of the model parameters. `mirt` package provides lots of useful functions to conduct IRT analysis. `tabledown` package offers `ggplot2` based plotting options using `mirt` package based model parameters to facilitate the customization of the plots. 
+
+Let's create a APA publication focused ggplot theme for our plots:
+
+```r
+library(ggplot2)
+#Creating a custom theme to be used for the plots
+apatheme=theme_bw()+
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(),
+       axis.text.x = element_text(size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.title.x = element_text(size = 10),
+        axis.title.y = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        legend.text = element_text(size = 10),
+        legend.title=element_blank(),
+        axis.line.x = element_line(color='black'),
+        axis.line.y = element_line(color='black'),
+        panel.border = element_rect(color = "black",
+                                    fill = NA,
+                                    size = 1))
+                                    
+#Create a data frame for your IRT analysis
+
+data <- tabledown::FFMQ.CFA %>% dplyr::select(item1,  item6 , item11 , item15 , item20 ,      item26 , item31 , item36)
+
+#Conduct the IRT analysis using mirt package
+
+model <- mirt::mirt(data, model = 1, itemtype = 'graded', 
+                    SE = TRUE, Se.type = 'MHRM',
+                    technical = list(NCYCLES = 10000))
+
+```
+#### Plot Item Characteristic Curve (ICC)
+`tabledown` offers `ggicc` function to create `ggplot2` based Item Characteristic Curve. `ggicc` function takes three arguments (a) model: your IRT model (B) item number (C) Theta range: `ggicc` use a symmetric theta range centred on zero. Theta = 6 will plot the ICC with a theta range of -6 to 6. 
+
+```r
+icc <- tabledown::ggicc(model, 2, 6)+apatheme
+```
+#### Plot Item Information Curve (IIC)
+
+`tabledown` offers `ggiteminfo` function to create `ggplot2` based item information curve. The arguments for `ggiteminfo` are similar to the arguments of`ggicc` function 
+
+```r
+iic <- tabledown::ggiteminfo(model, 2, 6)+apatheme+geom_area()+aes(fill =  "#E64B3599")+theme(legend.position = "none")
+```
+
+#### Plot Test Information Curve (TIC)
+
+`tabledown` also offers `ggitestinfo` and `ggitestinfo_se` function to create `ggplot2` based test information curve. `ggitestinfo_se` will give you a test information plot with standard error of measurement.  The arguments for `ggiteminfo` are similar to the arguments of`ggicc` function 
+
+```r
+tic <- tabledown::ggtestinfo_se(data, model)+apatheme+ labs(title   = "Test Information Curve")+geom_area(fill =  "blue", alpha=.5)
+```
+
+![](man/figures/irt.plots.png "Publication quality plots for Item Response Theory Based Analysis: Item Characteristic Curve, Item Information Curve and Test Information Curve")
 
 ### Creating A Summary Table for Factor Analysis
 

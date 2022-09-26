@@ -24,7 +24,8 @@ ggiteminfo <- function (model, item, theta){
   information <- mirt::iteminfo(iteminfo, Theta)
   data <- as.data.frame(cbind(Theta, information))
   plot <- ggplot2::ggplot(data, ggplot2::aes(x=Theta, y=information)) +
-    ggplot2::geom_line()+ggplot2::labs(y="Item Information")
+    ggplot2::geom_line()+ggplot2::xlab(expression(theta)) +
+    ggplot2::ylab(expression(I(theta)))+ ggplot2::theme(legend.title=ggplot2::element_blank())
   return(plot)
 
 }

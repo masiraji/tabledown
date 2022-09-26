@@ -30,7 +30,7 @@ ggicc <- function(model, item, theta){
   icc2<- reshape(icc, direction='long', varying = paste("P", 1:ncol(P), sep=''), v.names = 'P',
                  times = paste("P", 1:ncol(P), sep=''))
   plot <- ggplot2::ggplot(icc2, ggplot2::aes(Theta,P, col =time))+ggplot2::geom_line()+ggplot2::xlab(expression(theta)) +
-    ggplot2::ylab(expression(I(theta)))+ ggplot2::theme(legend.title=ggplot2::element_blank())
+    ggplot2::ylab(expression(P(theta)))+ ggplot2::theme(legend.title=ggplot2::element_blank())
   return(plot)
 
 }

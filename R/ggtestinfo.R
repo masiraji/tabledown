@@ -26,7 +26,8 @@ ggtestinfo <- function(dataframe,model){
 
   data <- as.data.frame(cbind(Theta, T1))
   plot <-  ggplot2::ggplot(data, ggplot2::aes(x=Theta, y=T1)) +
-    ggplot2::geom_line() + ggplot2::labs(y="Test Information")
+    ggplot2::geom_line() + ggplot2::xlab(expression(theta)) +
+    ggplot2::ylab(expression(I(theta)))+ ggplot2::theme(legend.title=ggplot2::element_blank())
   return(plot)
 }
 
