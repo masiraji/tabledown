@@ -56,7 +56,7 @@ usethis::use_github()
 #check for cran
 devtools::check_rhub()
 
-
+devtools::check()
 #Use vintage
 usethis::use_vignette()
 
@@ -93,4 +93,6 @@ devtools::check_win_devel()
 
 fledge::bump_version("patch")
 
-lifecycle::sta
+
+#Resubmit
+devtools::submit_cran()
