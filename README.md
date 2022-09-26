@@ -58,7 +58,7 @@ model <- mirt::mirt(data, model = 1, itemtype = 'graded',
 
 ```
 #### Plot Item Characteristic Curve (ICC)
-`tabledown` offers `ggicc` function to create `ggplot2` based Item Characteristic Curve. `ggicc` function takes three arguments (a) model: your IRT model (B) item number (C) Theta range: `ggicc` use a symmetric theta range centred on zero. Theta = 6 will plot the ICC with a theta range of -6 to 6. 
+`tabledown` offers `ggicc` function to create `ggplot2` based Item Characteristic Curve. `ggicc` function takes three arguments (a) model: your IRT model (B) item number (C) Theta range: `ggicc` use a symmetric theta range. Theta = 6 will plot the ICC with a theta range of -6 to 6. 
 
 ```r
 icc <- tabledown::ggicc(model, 2, 6)+apatheme

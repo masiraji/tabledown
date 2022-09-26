@@ -121,7 +121,7 @@
 <div class="section level4">
 <h4 id="plot-item-characteristic-curve-icc">Plot Item Characteristic Curve (ICC)<a class="anchor" aria-label="anchor" href="#plot-item-characteristic-curve-icc"></a>
 </h4>
-<p><code>tabledown</code> offers <code>ggicc</code> function to create <code>ggplot2</code> based Item Characteristic Curve. <code>ggicc</code> function takes three arguments (a) model: your IRT model (B) item number (C) Theta range: <code>ggicc</code> use a symmetric theta range centred on zero. Theta = 6 will plot the ICC with a theta range of -6 to 6.</p>
+<p><code>tabledown</code> offers <code>ggicc</code> function to create <code>ggplot2</code> based Item Characteristic Curve. <code>ggicc</code> function takes three arguments (a) model: your IRT model (B) item number (C) Theta range: <code>ggicc</code> use a symmetric theta range. Theta = 6 will plot the ICC with a theta range of -6 to 6.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">icc</span> <span class="op">&lt;-</span> <span class="fu">tabledown</span><span class="fu">::</span><span class="fu"><a href="reference/ggicc.html">ggicc</a></span><span class="op">(</span><span class="va">model</span>, <span class="fl">2</span>, <span class="fl">6</span><span class="op">)</span><span class="op">+</span><span class="va">apatheme</span></span></code></pre></div>
 </div>

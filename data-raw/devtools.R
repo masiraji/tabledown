@@ -81,3 +81,7 @@ remotes::install_github("masiraji/monashthesisdown")
 usethis::use_rmarkdown_template("monashthesis")
 
 psychoshiny::psychoshiny()
+
+
+#Releasing the package in CRAN
+devtools::release()
