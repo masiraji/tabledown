@@ -1,3 +1,13 @@
+## Resubmission 03 on 27 Sep 2022
+This is the 3rd resubmission. In this submission:
+* Title is reduced 
+
+R-CMD results indicated
+* 0 errors, 0 warnings, 0 notes.
+
+
+
+
 ## Resubmission 02 on 27 Sep 2022
 This is the 2nd resubmission. In this submission:
 * The description does not start with 'A package" and alike semantics.
@@ -6,7 +16,7 @@ This is the 2nd resubmission. In this submission:
 * \value added in bedTime.Rd, des.tab.Rd, normality.loop.Rd
 
 R-CMD results indicated
-* 0 errors, 0 warnings, 0 notes,
+* 0 errors, 0 warnings, 0 notes.
 
 
 

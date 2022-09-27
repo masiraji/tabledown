@@ -19,7 +19,7 @@ A publication quality item characteristic plot. Output object is a ggplot object
 \description{
 This function will create publication worthy IRT item characteristic plot using ggplot2 from objects created from
 mirt pack.
-Using ggplot2 will enable the user to modify the Iitem characteristic plot.
+Using ggplot2 will enable the user to modify the item characteristic plot.
 }
 \examples{
 data <- tabledown::Rotter[, 11:31]

@@ -1,4 +1,4 @@
-#' Produce Publication Quality Tables and Plots for Your Item Analysis, Factor Analysis (EFA, CFA) and Item Response Theory Based Analysis
+#' Produce Publication Quality Tables and Plots
 #'
 #' The tabledown package provides necessary data frames used throughout the book and some neat functions.
 #'
