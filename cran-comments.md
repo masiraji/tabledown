@@ -1,4 +1,17 @@
-## Resubmission
+## Resubmission 02 on 27 Sep 2022
+This is the 2nd resubmission. In this submission:
+* The description does not start with 'A package" and alike semantics.
+* Updated the desription part of the DESCRIPTION file
+* TRUE and FALSE are ysed instead of T and F.
+* \value added in bedTime.Rd, des.tab.Rd, normality.loop.Rd
+
+R-CMD results indicated
+* 0 errors, 0 warnings, 0 notes,
+
+
+
+
+## Resubmission 01 
 This is a resubmission. In this version 
 
 * There were no ERRORs or WARNINGs and Notes
@@ -7,7 +20,7 @@ This is a resubmission. In this version
 
 
 
-## R CMD check results
+## R CMD check results for initial submission
 There were no ERRORs or WARNINGs. 
 There was 1 NOTE:
 

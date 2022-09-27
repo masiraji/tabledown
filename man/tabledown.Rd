@@ -3,7 +3,7 @@
 \docType{package}
 \name{tabledown}
 \alias{tabledown}
-\title{This pacakge is a companion of the book "Basic and Advanced Psychometrics in R"}
+\title{Produce Publication Quality Tables and Plots for Your Item Analysis, Factor Analysis (EFA, CFA) and Item Response Theory Based Analysis}
 \description{
 The tabledown package provides necessary data frames used throughout the book and some neat functions.
 }

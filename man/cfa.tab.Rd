@@ -2,17 +2,17 @@
 % Please edit documentation in R/cfa.tab.R
 \name{cfa.tab}
 \alias{cfa.tab}
-\title{A Function for Creating  Publication Quality Tables with CFA fit indices}
+\title{A Function for Creating  Publication Quality Tables with CFA fit indices.}
 \usage{
-cfa.tab(x, robust = F)
+cfa.tab(x, robust = FALSE)
 }
 \arguments{
-\item{x}{A lavaan class object}
+\item{x}{A lavaan class object.}
 
 \item{robust}{If TRUE, will provide robust fit indices when applicable instead of the default indices.}
 }
 \value{
-A  summary with CFA fit indices
+A  summary with CFA fit indices in a matrix structure.
 }
 \description{
 This function will create publication worthy tables with CFA fit indices from lavaan class object.

@@ -2,19 +2,19 @@
 % Please edit documentation in R/fac.tab.R
 \name{fac.tab}
 \alias{fac.tab}
-\title{A Function for Creating  Publication Quality Factor Tables}
+\title{A Function for Creating  Publication Quality Factor Tables.}
 \usage{
-fac.tab(x, cut, complexity = T)
+fac.tab(x, cut, complexity = TRUE)
 }
 \arguments{
-\item{x}{A psych package object}
+\item{x}{A psych package object.}
 
-\item{cut}{The value under which all factor loading will be suppressed}
+\item{cut}{The value under which all factor loading will be suppressed.}
 
-\item{complexity}{To add complexity parameters}
+\item{complexity}{To add complexity parameters.}
 }
 \value{
-A publication ready summary table for the Factor analysis conducted by psych Package
+A publication ready summary table for the Factor analysis conducted by psych Package. Output structure is data frame.
 }
 \description{
 This function will create publication worthy factor tables from objects created from

@@ -1,10 +1,10 @@
 Package: tabledown
-Title: A Companion Pack for the Book "Basic & Advanced Psychometrics in R"
+Title: Produce Publication Quality Tables and Plots for Your Item Analysis, Factor Analysis (EFA, CFA) and Item Response Theory Based Analysis
 Version: 0.0.3
 Authors@R: 
     person("Mushfiqul Anwar", "Siraji", , "siraji1993@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0003-0127-9982"))
-Description: A companion R package for the Book " Basic and Advanced Psychometrics in R" [work in Progress]. This package includes data-frames and some interesting functions to create publication-friendly summary tables for factor analysis, confirmatory factor analysis and item analysis.
+Description: Create publication-friendly plots tables for IRT analysis, item analysis, factor analysis, confirmatory factor analysis and item analysis.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

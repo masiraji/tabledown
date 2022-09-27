@@ -2,22 +2,22 @@
 % Please edit documentation in R/ggtestinfo.R
 \name{ggtestinfo}
 \alias{ggtestinfo}
-\title{A Function for Creating  Publication Quality IRT Test Information plot}
+\title{A Function for Creating  Publication Quality IRT test information plot.}
 \usage{
 ggtestinfo(dataframe, model)
 }
 \arguments{
-\item{dataframe}{your data}
+\item{dataframe}{your data.}
 
-\item{model}{A mirt package fitted object}
+\item{model}{A mirt package fitted object.}
 }
 \value{
-A publication quality Test information plot
+A publication quality Test information plot. Output object is a ggplot object.
 }
 \description{
 This function will create publication worthy IRT Test information plot using ggplot2 from objects created from
 mirt pack.
-Using ggplot2 will enable the user to modify the Item plot in many ways
+Using ggplot2 will enable the user to modify the Item plot.
 }
 \examples{
 data <- tabledown::Rotter[, 11:31]

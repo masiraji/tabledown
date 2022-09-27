@@ -2,24 +2,23 @@
 % Please edit documentation in R/ggiteminfo.R
 \name{ggiteminfo}
 \alias{ggiteminfo}
-\title{A Function for Creating  Publication Quality IRT Item Characteristic Plot}
+\title{A Function for Creating  Publication Quality IRT item information plot.}
 \usage{
 ggiteminfo(model, item, theta)
 }
 \arguments{
-\item{model}{A mirt package fitted object}
+\item{model}{A mirt package fitted object.}
 
-\item{item}{Item number (i.e. 1,2,3,4)}
+\item{item}{Item number (i.e. 1,2,3,4).}
 
-\item{theta}{Theta range. Put only one number. Theta =3 will be considered as theta range (-3 to 3)}
+\item{theta}{Theta range. Put only one number. Theta =3 will be considered as theta range (-3 to 3).}
 }
 \value{
-A publication quality item information plot
+A publication quality item information plot.Output object is a ggplot object.
 }
 \description{
-This function will create publication worthy IRT item characteristic plot using ggplot2 from objects created from
+This function will create publication worthy IRT item information plot. using ggplot2 from objects created from
 mirt pack.
-Using ggplot2 will enable the user to modify the item characteristic plot in many ways
 }
 \examples{
 data <- tabledown::Rotter[, 11:31]

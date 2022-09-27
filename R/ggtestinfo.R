@@ -1,18 +1,18 @@
-#' A Function for Creating  Publication Quality IRT Test Information plot
+#' A Function for Creating  Publication Quality IRT test information plot.
 #'
 #' This function will create publication worthy IRT Test information plot using ggplot2 from objects created from
 #' mirt pack.
-#' Using ggplot2 will enable the user to modify the Item plot in many ways
+#' Using ggplot2 will enable the user to modify the Item plot.
 #'
-#' @param  dataframe your data
-#' @param  model A mirt package fitted object
+#' @param  dataframe your data.
+#' @param  model A mirt package fitted object.
 #'@examples
 #'data <- tabledown::Rotter[, 11:31]
 #'model <- mirt::mirt(data, model = 1, itemtype = '2PL')
 #'
 #'plot <- ggtestinfo(data, model)
 #'@return
-#'A publication quality Test information plot
+#'A publication quality Test information plot. Output object is a ggplot object.
 
 
 #'@importFrom mirt extract.item iteminfo

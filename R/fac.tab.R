@@ -1,13 +1,13 @@
-#' A Function for Creating  Publication Quality Factor Tables
+#' A Function for Creating  Publication Quality Factor Tables.
 #'
 #' This function will create publication worthy factor tables from objects created from
 #' psych pack.
 #' I have came across this beautiful piece of codes
 #' at https://www.anthonyschmidt.co/post/2020-09-27-efa-tables-in-r/ and modified it a bit.
 #'
-#' @param  x A psych package object
-#' @param  cut The value under which all factor loading will be suppressed
-#' @param complexity To add complexity parameters
+#' @param  x A psych package object.
+#' @param  cut The value under which all factor loading will be suppressed.
+#' @param complexity To add complexity parameters.
 #'@examples
 #'data <- tabledown::Rotter[, 11:31]
 #'correlations <- psych::polychoric(data, correct = 0)
@@ -16,17 +16,17 @@
 #'table <- fac.tab(fa.5F.1, .3)
 #'#always save the output into an object
 #'@return
-#'A publication ready summary table for the Factor analysis conducted by psych Package
+#'A publication ready summary table for the Factor analysis conducted by psych Package. Output structure is data frame.
 
 
 #' @importFrom magrittr  %>%
 #'@importFrom dplyr across mutate
 #'@importFrom tidyselect vars_select_helpers
 #' @export
-fac.tab <- function(x, cut,complexity =T ) {
+fac.tab <- function(x, cut,complexity =TRUE ) {
 
   V1 <- V2 <- V3 <-NULL
-  ifelse(complexity==T,{
+  ifelse(complexity==TRUE,{
 
     loadings <- psych::fa.sort(x)$loadings %>% round(2)
 

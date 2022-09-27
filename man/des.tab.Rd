@@ -2,12 +2,15 @@
 % Please edit documentation in R/des.tab.R
 \name{des.tab}
 \alias{des.tab}
-\title{A Function for Descriptive data for item analysis}
+\title{A Function for Descriptive data for item analysis.}
 \usage{
 des.tab(df)
 }
 \arguments{
-\item{df}{A data frame}
+\item{df}{A data frame.}
+}
+\value{
+Returns a summary table of descriptives in a data frame structure.
 }
 \description{
 This function will create a publication ready essential descriptive table for item analysis.

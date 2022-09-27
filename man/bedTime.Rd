@@ -2,14 +2,17 @@
 % Please edit documentation in R/bedtime.R
 \name{bedTime}
 \alias{bedTime}
-\title{A Function for calculating time spent in bed}
+\title{A Function for calculating time spent in bed.}
 \usage{
 bedTime(x, y)
 }
 \arguments{
-\item{x}{A vector containing time to do to bed}
+\item{x}{A vector containing time to do to bed.}
 
-\item{y}{A vector containing time of wake}
+\item{y}{A vector containing time of wake.}
+}
+\value{
+Calculates time spent in bed in hours. Output class is numeric.
 }
 \description{
 This function will help you to calculate the time a person spent in bed based on their sleep log.
@@ -20,9 +23,10 @@ More importantly  you do not require to entry the dates to calculate bed time.
 Just wake up time and time to go to bed is enough (24 hour format).
 }
 \examples{
-#Please use 24 hour format
+#Please use 24 hour format.
 #Easiest way is to enter the data as character.
 bed <-c("20:00", "21:00", "23:00")
 wake <-c("6:00", "7:00", "8:00")
 bedtime <- bedTime(bed, wake)
+
 }
