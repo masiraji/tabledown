@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggtestinfo_se.R
 \name{ggtestinfo_se}
 \alias{ggtestinfo_se}
-\title{A Function for Creating  Publication Quality IRT test information plot with standard error.}
+\title{A Function for Creating  Publication Quality Item Response Theory based test information plot with standard error.}
 \usage{
 ggtestinfo_se(dataframe, model)
 }
@@ -15,7 +15,7 @@ ggtestinfo_se(dataframe, model)
 A publication quality Test information plot with standard error (dashed line). Output object is a ggplot object.
 }
 \description{
-This function will create publication worthy IRT Test information plot with standard error using ggplot2 from objects created from
+This function will create publication worthy Item Response Theory based Test information plot with standard error using ggplot2 from objects created from
 mirt pack.
 Using ggplot2 will enable the user to modify the Item plot.
 }

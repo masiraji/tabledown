@@ -1,3 +1,11 @@
+## Resubmission 04 on 30 Sep 2022
+This is the 4th resubmission. In this submission:
+* I have removed the acronyms from description file.
+* Added another function called ggreliability.
+R-CMD results indicated
+* 0 errors, 0 warnings, 0 notes.
+
+
 ## Resubmission 03 on 27 Sep 2022
 This is the 3rd resubmission. In this submission:
 * Title is reduced 

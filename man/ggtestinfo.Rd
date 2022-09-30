@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggtestinfo.R
 \name{ggtestinfo}
 \alias{ggtestinfo}
-\title{A Function for Creating  Publication Quality IRT test information plot.}
+\title{A Function for Creating  Publication Quality Item Response Theory based test information plot.}
 \usage{
 ggtestinfo(dataframe, model)
 }
@@ -15,7 +15,7 @@ ggtestinfo(dataframe, model)
 A publication quality Test information plot. Output object is a ggplot object.
 }
 \description{
-This function will create publication worthy IRT Test information plot using ggplot2 from objects created from
+This function will create publication worthy Item Response Theory based Test information plot using ggplot2 from objects created from
 mirt pack.
 Using ggplot2 will enable the user to modify the Item plot.
 }

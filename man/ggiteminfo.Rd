@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggiteminfo.R
 \name{ggiteminfo}
 \alias{ggiteminfo}
-\title{A Function for Creating  Publication Quality IRT item information plot.}
+\title{A Function for Creating  Publication Quality Item Response Theory based item information plot.}
 \usage{
 ggiteminfo(model, item, theta)
 }
@@ -17,7 +17,7 @@ ggiteminfo(model, item, theta)
 A publication quality item information plot.Output object is a ggplot object.
 }
 \description{
-This function will create publication worthy IRT item information plot. using ggplot2 from objects created from
+This function will create publication worthy Item Response Theory based item information plot. using ggplot2 from objects created from
 mirt pack.
 }
 \examples{

@@ -1,6 +1,6 @@
-#' A Function for Creating  Publication Quality IRT item information plot.
+#' A Function for Creating  Publication Quality Item Response Theory based item information plot.
 #'
-#' This function will create publication worthy IRT item information plot. using ggplot2 from objects created from
+#' This function will create publication worthy Item Response Theory based item information plot. using ggplot2 from objects created from
 #' mirt pack.
 #'
 #' @param  model A mirt package fitted object.

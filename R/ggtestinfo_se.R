@@ -1,6 +1,6 @@
-#' A Function for Creating  Publication Quality IRT test information plot with standard error.
+#' A Function for Creating  Publication Quality Item Response Theory based test information plot with standard error.
 #'
-#' This function will create publication worthy IRT Test information plot with standard error using ggplot2 from objects created from
+#' This function will create publication worthy Item Response Theory based Test information plot with standard error using ggplot2 from objects created from
 #' mirt pack.
 #' Using ggplot2 will enable the user to modify the Item plot.
 #'
