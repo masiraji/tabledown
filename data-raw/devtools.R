@@ -96,3 +96,11 @@ fledge::bump_version("patch")
 
 #Resubmit
 devtools::submit_cran()
+
+
+#Tag the version after releasing
+fledge::tag_version()
+
+
+# Create GitHub release
+usethis::use_github_release()
