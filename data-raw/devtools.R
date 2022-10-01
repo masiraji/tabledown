@@ -47,7 +47,6 @@ devtools::install_github("cynkra/fledge")
 
 fledge::bump_version()
 
-fledge::tag_version()
 fledge::finalize_version()
 usethis::use_github()
 
