@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tabledown 0.0.3.9001
+
+- CRAN approved and Github released
+
+
 # tabledown 0.0.3.9000
 
 - Same as previous version.
