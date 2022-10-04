@@ -113,7 +113,7 @@ Using `ggreliability` function a reliability curve can easily developed.
 reliability <- tabledown::ggreliability(data, model)+labs(title="Reliability Curve")+geom_area(fill="grey", alpha=.5)+apatheme
 ```
 
-![](man/figures/irt.plots.png "Publication quality plots for Item Response Theory Based Analysis: Item Characteristic Curve, Item Information Curve and Test Information Curve")
+![](man/figures/irt.png "Publication quality plots for Item Response Theory Based Analysis: Item Characteristic Curve, Item Information Curve and Test Information Curve")
 
 ### Creating A Summary Table for Factor Analysis
 
