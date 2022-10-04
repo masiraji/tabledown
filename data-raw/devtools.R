@@ -1,4 +1,3 @@
-packrat::init()
 install.packages("devtools")
 # to create a Rproject
 #devtools::create("MONASH")
@@ -22,6 +21,7 @@ badgecreatr::badge_thanks_md()
 badgecreatr::badge_license()
 usethis::use_lifecycle_badge("stable")
 usethis::use_lifecycle()
+badgecreatr::badge_last_change(location = ".")
 
 #Usethis
 #Add file to project ignore
