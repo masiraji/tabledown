@@ -7,9 +7,9 @@
 gt_tab(dataframe, recode_code)
 }
 \arguments{
-\item{recode_code}{Recode key}
+\item{dataframe}{Dataframe with all items.}
 
-\item{datafrmae}{Dataframe with all items.}
+\item{recode_code}{Recode key}
 }
 \value{
 A publication ready descriptive summary table in png format.
@@ -19,7 +19,8 @@ This function will gtExtra package friendly data summary using the datafrmae pro
 psych pack.
 }
 \examples{
-data <- tabledown::FFMQ.CFA[, 9:18]
-recode_code <- c( "1" = "Never or very rarely true", "2" = "Rarely true", "3"= "Sometimes true","4" = "Often true","5" = "Very often or always true")
-sample_tab <- gt_tab(gt.data,recode_code)
+data <- tabledown::FFMQ.CFA[, c(9,10,12,14)]
+recode_code <- c( "1" = "Never or very rarely true", "2" = "Rarely true",
+"3"= "Sometimes true","4" = "Often true","5" = "Very often or always true")
+sample_tab <- gt_tab(data,recode_code)
 }

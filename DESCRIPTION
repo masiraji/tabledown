@@ -26,7 +26,10 @@ Imports:
     tidyselect,
     lavaan,
     mirt,
-    ggplot2
+    ggplot2,
+    plotly,
+    kutils,
+    tidyr
 Suggests: 
     rmarkdown,
     knitr,

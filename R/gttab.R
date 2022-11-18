@@ -3,18 +3,19 @@
 #' This function will gtExtra package friendly data summary using the datafrmae provided
 #' psych pack.
 
-#' @param  datafrmae Dataframe with all items.
+#' @param  dataframe Dataframe with all items.
 #' @param  recode_code Recode key
 #'@examples
-#'data <- tabledown::FFMQ.CFA[, 9:18]
-#'recode_code <- c( "1" = "Never or very rarely true", "2" = "Rarely true", "3"= "Sometimes true","4" = "Often true","5" = "Very often or always true")
+#'data <- tabledown::FFMQ.CFA[, c(9,10,12,14)]
+#'recode_code <- c( "1" = "Never or very rarely true", "2" = "Rarely true",
+#'"3"= "Sometimes true","4" = "Often true","5" = "Very often or always true")
 #'sample_tab <- gt_tab(data,recode_code)
 #'@return
 #'A publication ready descriptive summary table in png format.
 
 
 #' @importFrom magrittr  %>%
-#'@importFrom dplyr
+#'@importFrom stats median sd
 #'@importFrom tidyselect vars_select_helpers
 #'@importFrom tidyr gather
 #'@importFrom kutils likert
@@ -22,7 +23,8 @@
 
 #' @export
 gt_tab <- function(dataframe, recode_code){
-
+Items <- 0
+value <- 0
   longtab <- as.data.frame(tidyr::gather(dataframe, Items, value))
   longtab$value <- as.numeric(as.character(longtab$value))
 
