@@ -103,3 +103,6 @@ fledge::tag_version()
 
 # Create GitHub release
 usethis::use_github_release()
+
+pack <- available.packages()
+pack["ggplot2","Imports"]
