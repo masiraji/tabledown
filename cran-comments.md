@@ -1,6 +1,6 @@
 ## Resubmission 05 on 8 Jan 2024
 This is the 5th resubmission. In this submission:
-* I have removed extra spaces in lavaan syntaxs used in cfa.tab.multi.R and cfa.tab.R files.
+* To fix the "issue in lavaan syntax cfa.tab example",  I have removed extra spaces in lavaan syntax used in cfa.tab.multi.R and cfa.tab.R files.
 R-CMD results indicated
 * 0 errors, 0 warnings, 0 notes.
 
