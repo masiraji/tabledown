@@ -20,7 +20,7 @@ This function will create publication worthy tables with CFA fit indices from la
 \examples{
 data <- tabledown::FFMQ.CFA
 FF.model.Original <- "Observe =~ item1 + item6 + item11 + item15 +
-item20 + item26 + item31 + item 36
+item20 + item26 + item31 + item36
 Describe =~ item2 + item7 + Ritem12 + Ritem16 + Ritem22 + item27 +
 item32 + item37
 Awareness =~ Ritem5 + Ritem8 + Ritem13 + Ritem18 + Ritem23 + Ritem28
