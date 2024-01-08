@@ -1,4 +1,19 @@
-<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+
+# tabledown 0.0.3.9002
+
+## Dev
+
+- All good to send for an Update (#4).
+
+## Uncategorized
+
+- Merge pull request #1 from masiraji/dev.
+
+  Website updated
+
+- CRAN approved and Github released.
+
 
 # tabledown 0.0.3.9001
 
