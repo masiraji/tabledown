@@ -4,10 +4,12 @@
 \alias{des.tab}
 \title{A Function for Descriptive data for item analysis.}
 \usage{
-des.tab(df)
+des.tab(df, reverse = FALSE)
 }
 \arguments{
 \item{df}{A data frame.}
+
+\item{reverse}{If TRUE, will provide indicate which items had a negative correlation and reverse them}
 }
 \value{
 Returns a summary table of descriptives in a data frame structure.

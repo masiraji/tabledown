@@ -6,17 +6,23 @@
 #'data <- tabledown::Rotter[, 11:31]
 #'table <- des.tab(data)
 #' @param df A data frame.
+#' @param reverse If TRUE, will provide indicate which items had a negative correlation and reverse them
+#'
 #'@return
 #'Returns a summary table of descriptives in a data frame structure.
 
 #' @export
-des.tab <- function(df){
+des.tab <- function(df, reverse = FALSE){
+
   Descriptives <- psych::describe(df)
   Mean <-MOTE::apa(Descriptives$mean,2,TRUE)
   SD <-MOTE::apa(Descriptives$sd,2,TRUE)
   Skew <-MOTE::apa(Descriptives$skew,2,TRUE)
   Kurtosis <- MOTE::apa(Descriptives$kurtosis,2,TRUE)
+  ifelse(reverse==TRUE,{
   alpha <- psych::alpha(df,check.keys=TRUE)
+  },
+  {alpha <- psych::alpha(df,check.keys=FALSE)})
   Items <- rownames(alpha$item.stats)
   Corrected.item.total.correlation <- MOTE::apa(alpha$item.stats$r.cor,2,TRUE)
 normality.test <-normality.loop(df)
@@ -24,6 +30,6 @@ normality.test <-normality.loop(df)
  sig <-(normality.test$significance)
  Normality <- paste(statistics, sig, sep = "" )
  des.tab <-as.data.frame((cbind(Items, Mean, SD, Skew,Kurtosis,  Normality,Corrected.item.total.correlation)))
- des.tab
+ des.tab}
 
-  }
+
