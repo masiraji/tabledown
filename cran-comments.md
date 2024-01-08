@@ -1,3 +1,11 @@
+## Resubmission 05 on 8 Jan 2024
+This is the 5th resubmission. In this submission:
+* I have removed extra spaces in lavaan syntaxs used in cfa.tab.multi.R and cfa.tab.R files.
+R-CMD results indicated
+* 0 errors, 0 warnings, 0 notes.
+
+
+
 ## Resubmission 04 on 30 Sep 2022
 This is the 4th resubmission. In this submission:
 * I have removed the acronyms from description file.

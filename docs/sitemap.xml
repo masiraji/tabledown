@@ -79,10 +79,19 @@
     <loc>/reference/ggreliability.html</loc>
   </url>
   <url>
+    <loc>/reference/ggreliability_plotly.html</loc>
+  </url>
+  <url>
     <loc>/reference/ggtestinfo.html</loc>
   </url>
   <url>
     <loc>/reference/ggtestinfo_se.html</loc>
+  </url>
+  <url>
+    <loc>/reference/ggtestinfo_se_ploty.html</loc>
+  </url>
+  <url>
+    <loc>/reference/gt_tab.html</loc>
   </url>
   <url>
     <loc>/reference/index.html</loc>

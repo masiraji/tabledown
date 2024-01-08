@@ -90,7 +90,7 @@ at https://www.anthonyschmidt.co/post/2020-09-27-efa-tables-in-r/ and modified i
 <span class="r-in"><span><span class="va">fa.5F.1</span> <span class="op">&lt;-</span> <span class="fu">psych</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/psych/man/fa.html" class="external-link">fa</a></span><span class="op">(</span>r<span class="op">=</span><span class="va">correlations</span><span class="op">$</span><span class="va">rho</span>, nfactors <span class="op">=</span> <span class="fl">5</span>, fm<span class="op">=</span> <span class="st">"pa"</span>,rotate <span class="op">=</span><span class="st">"varimax"</span>,</span></span>
 <span class="r-in"><span>residuals <span class="op">=</span> <span class="cn">TRUE</span>, SMC <span class="op">=</span> <span class="cn">TRUE</span>, n.obs <span class="op">=</span><span class="fl">428</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">table</span> <span class="op">&lt;-</span> <span class="fu">fac.tab</span><span class="op">(</span><span class="va">fa.5F.1</span>, <span class="fl">.3</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Joining, by = "item"</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Joining with `by = join_by(item)`</span>
 <span class="r-in"><span><span class="co">#always save the output into an object</span></span></span>
 </code></pre></div>
     </div>
@@ -106,7 +106,7 @@ at https://www.anthonyschmidt.co/post/2020-09-27-efa-tables-in-r/ and modified i
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
