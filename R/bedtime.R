@@ -20,16 +20,22 @@
 #'Calculates time spent in bed in hours. Output class is numeric.
 
 #' @export
-bedTime <- function(x,y)
-{
-  bed <- x
-  wake <- y
-  wake <- paste(Sys.Date(), wake)
-  tmpbed <- paste(Sys.Date(), bed)
-  d <- apply(data.frame(tmpbed, wake), 1, function(x) difftime(x[2], x[1],
-                                                               units = "hours"))
-  adjust <- -(d < 0)
-  tmpbed <- paste(Sys.Date()+adjust, bed)
-  apply(data.frame(tmpbed, wake), 1, function(x) difftime(x[2], x[1], units = "hours"))
-}
 
+bedTime <- function(x, y) {
+  if (is.na(x) | is.na(y)) {
+    warning("Either bedtime or waking time was NA. Hours in bed returned as NA")
+    return(NA)
+  } else if (grepl("[0-9][0-9]:[0-9][0-9]", x) | grepl("[0-9][0-9]:[0-9][0-9]", y)) {
+    bed <- x
+    wake <- y
+    wake <- paste(Sys.Date(), wake)
+    tmpbed <- paste(Sys.Date(), bed)
+    d <- apply(data.frame(tmpbed, wake), 1, function(x) difftime(x[2], x[1], units = "hours"))
+    adjust <- -(d < 0)
+    tmpbed <- paste(Sys.Date()+adjust, bed)
+    bed_hours <- apply(data.frame(tmpbed, wake), 1, function(x) difftime(x[2], x[1], units = "hours"))
+    return(bed_hours)
+  } else {
+    warning("Either bedtime or waking time is not a string variable, or is not formatted as 'hh:mm'")
+    return(NA)}
+  }
