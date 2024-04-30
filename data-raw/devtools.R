@@ -115,3 +115,7 @@ usethis::use_github_action("check-standard")
 
 
 usethis::use_pkgdown_github_pages()
+
+
+#Fesibility check
+devtools::check_rhub()

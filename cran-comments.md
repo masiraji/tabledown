@@ -1,6 +1,8 @@
 ## Resubmission 06 on 30 April 2024
 
-This is the 6th resubmission. In this submission
+This is the 6th re submission. In this submission we have checked for all R-CMD-Check failures as suggested.
+R-CMD results indicated
+* 0 errors, 0 warnings, 0 notes.
 
 
 ## Resubmission 05 on 8 Jan 2024
