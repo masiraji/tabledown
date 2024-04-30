@@ -106,3 +106,11 @@ usethis::use_github_release()
 
 pack <- available.packages()
 pack["ggplot2","Imports"]
+
+
+
+
+usethis::use_github_action("check-standard")
+
+
+usethis::use_pkgdown_github_pages()

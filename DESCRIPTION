@@ -10,7 +10,7 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/masiraji/tabledown
+URL: https://github.com/masiraji/tabledown, https://masiraji.github.io/tabledown/
 BugReports: https://github.com/masiraji/tabledown/issues
 Language: en-US
 Depends: 

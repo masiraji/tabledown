@@ -1,3 +1,8 @@
+## Resubmission 06 on 30 April 2024
+
+This is the 6th resubmission. In this submission
+
+
 ## Resubmission 05 on 8 Jan 2024
 This is the 5th resubmission. In this submission:
 * To fix the "issue in lavaan syntax cfa.tab example",  I have removed extra spaces in lavaan syntax used in cfa.tab.multi.R and cfa.tab.R files.
