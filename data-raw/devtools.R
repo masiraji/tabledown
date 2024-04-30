@@ -9,6 +9,7 @@ usethis::browse_github()
 rm(list = c("ac.tab"))
 
 #packgedown
+pkgdown::init_site()
 pkgdown::build_site()
 pkgdown::build_home(pkg = ".", override = list(), preview = NA, quiet = TRUE)
 
@@ -32,7 +33,7 @@ usethis::git_vaccinate()
 usethis::use_build_ignore(".github")
 #Spelling
 usethis::use_spell_check()
-
+devtools::check()
 
 #Use magrittr's pipe in your package
 usethis::use_pipe()
@@ -109,7 +110,7 @@ pack["ggplot2","Imports"]
 
 
 
-
+#Use this two for the updated page deployment (Do not use the previous method)
 usethis::use_github_action("check-standard")
 
 

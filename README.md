@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) [![R-CMD-check](https://github.com/masiraji/tabledown/workflows/R-CMD-check/badge.svg)](https://github.com/masiraji/tabledown/actions) [![license](https://img.shields.io/badge/license-MIT%20+%20file%20LICENSE-lightgrey.svg)](https://choosealicense.com/) [![metacran downloads](https://cranlogs.r-pkg.org/badges/tabledown)](https://cran.r-project.org/package=tabledown)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)  [![license](https://img.shields.io/badge/license-MIT%20+%20file%20LICENSE-lightgrey.svg)](https://choosealicense.com/) [![metacran downloads](https://cranlogs.r-pkg.org/badges/tabledown)](https://cran.r-project.org/package=tabledown)
 [![R-CMD-check](https://github.com/masiraji/tabledown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/masiraji/tabledown/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 

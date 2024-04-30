@@ -2,5 +2,8 @@ pandoc: 3.1.1
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-01-08T15:33Z
+last_built: 2024-04-30T14:18Z
+urls:
+  reference: https://masiraji.github.io/tabledown/reference
+  article: https://masiraji.github.io/tabledown/articles
 
