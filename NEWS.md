@@ -2,7 +2,8 @@
 
 # tabledown 1.0.0
 
-- Internal changes only.
+- Version number updated to major updates
+-No example requires execution time >5s.
 
 
 # tabledown 0.0.3.9003

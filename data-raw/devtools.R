@@ -91,8 +91,8 @@ devtools::check_rhub()
 devtools::release()
 devtools::check_win_devel()
 
-fledge::bump_version("patch")
-
+fledge::bump_version("major")
+#change the bump_version type before doing edits
 
 #Resubmit
 devtools::submit_cran()
@@ -119,3 +119,6 @@ usethis::use_pkgdown_github_pages()
 
 #Fesibility check
 devtools::check_rhub()
+
+# Update version number
+usethis::use_version()
