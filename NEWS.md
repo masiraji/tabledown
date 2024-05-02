@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# tabledown 1.0.0
+
+- Internal changes only.
+
+
 # tabledown 0.0.3.9003
 
 - Merge pull request #5 from olivroy/patch-1.
